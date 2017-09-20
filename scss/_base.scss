@@ -1,0 +1,42 @@
+a{
+	outline: none;
+	img{
+		border: none;
+	}
+}
+
+.content{
+	@include make-row;
+}
+
+.container{
+	 .heading{
+	 	@include make-md-column(12);
+		> h2{
+			margin: 0 0 30px;
+			font: bold 24px $font_main;
+			color: $heading_font_color;
+			background: $heading_color;
+			width: 300px;
+			height: 80px;
+			//text-align: center;
+			position: relative;
+			line-height: 75px;
+			text-indent: 90px;
+			> span{
+				display: text-indent;
+				width: 10px;
+				height: 30px;
+				//background: $heading_color;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+.sprite_servicos{
+	background-image: url('../images/spriteservicos.png');
+	background-repeat: no-repeat;
+}
