@@ -1,4 +1,6 @@
 body{
+	background-image:linear-gradient(to right, #1c1c1c, #444444);
+	background-height: -800px;
 	> header{
 		padding: 15px 0;
 		> .content{
@@ -7,6 +9,7 @@ body{
 				@include make-sm-column(4);
 				@include make-md-column(3);
 				
+
 				> .logo-container__logo{
 					width: 80%;
 				}
