@@ -42,15 +42,3 @@ a{
 	background-image: url('../images/spriteservicos.png');
 	background-repeat: no-repeat;
 }
-
-#outer{
-  position: relative;
-  width: 100%;
-}
-
-#inner{
-  left: 50%;
-  margin-left: -100px; /* A metade de sua largura. */
-  position: absolute;
-  width: 200px; /* O valor que você desejar. */
-}
