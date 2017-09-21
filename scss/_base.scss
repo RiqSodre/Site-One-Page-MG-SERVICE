@@ -12,6 +12,9 @@ a{
 .container{
 	 .heading{
 	 	@include make-md-column(12);
+	 	position: relative;
+ 		text-align: center;
+  		width: 100%;
 		> h2{
 			margin: 0 0 30px;
 			font: bold 24px $font_main;
@@ -19,10 +22,9 @@ a{
 			background: $heading_color;
 			width: 300px;
 			height: 80px;
-			//text-align: center;
 			position: relative;
 			line-height: 75px;
-			text-indent: 90px;
+			display: inline-block;
 			> span{
 				display: text-indent;
 				width: 10px;
@@ -39,4 +41,16 @@ a{
 .sprite_servicos{
 	background-image: url('../images/spriteservicos.png');
 	background-repeat: no-repeat;
+}
+
+#outer{
+  position: relative;
+  width: 100%;
+}
+
+#inner{
+  left: 50%;
+  margin-left: -100px; /* A metade de sua largura. */
+  position: absolute;
+  width: 200px; /* O valor que você desejar. */
 }
