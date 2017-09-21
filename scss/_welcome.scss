@@ -1,0 +1,24 @@
+#welcome{
+	> #welcome__itens{
+		> .welcome__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+
+			cursor: pointer;
+			min-height: 200px;
+			background-color: #67eaea;
+			background-clip: content-box;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+#welcome{
+	> .bemvindo{
+		font: 20px $font_main;
+		margin-bottom: 50px;
+		text-indent: 70px;
+		text-align: justify;
+	}
+}

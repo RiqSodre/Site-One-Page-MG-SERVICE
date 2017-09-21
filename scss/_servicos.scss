@@ -1,15 +1,13 @@
 #servicos{
 	> #servico__itens{
 		> .servico__item{
-			@include make-xs-column(2);
+			@include make-xs-column(12);
 			@include make-sm-column(6);
 			@include make-md-column(3);
 			
-			width: 40px;
 			cursor: pointer;
 			min-height: 200px;
-			border: 1px solid #02aac4;
-			padding: 0;
+			background-color: #67eaea;
 			background-clip: content-box;
 			margin-bottom: 30px;
 			> a{
