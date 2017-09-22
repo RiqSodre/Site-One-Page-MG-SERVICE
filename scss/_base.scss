@@ -10,13 +10,14 @@ a{
 }
 
 .container{
-	 .heading{
+	min-width: 350px;
+	.heading{
 	 	@include make-md-column(12);
 	 	position: relative;
- 		text-align: center;
+	 	text-align: center; 	
  		margin-top: 25px;
  		margin-bottom: 15px;
-  		width: 100%;
+ 		width: 100%;
 		> h2{
 			margin: 0 0 30px;
 			font: bold 24px $font_main;
