@@ -10,7 +10,8 @@ a{
 }
 
 .container{
-	 .heading{
+    min-width: 350px;
+	.heading{
 	 	@include make-md-column(12);
 	 	position: relative;
 	 	text-align: center;
