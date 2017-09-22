@@ -14,6 +14,8 @@ a{
 	 	@include make-md-column(12);
 	 	position: relative;
  		text-align: center;
+ 		margin-top: 25px;
+ 		margin-bottom: 15px;
   		width: 100%;
 		> h2{
 			margin: 0 0 30px;
