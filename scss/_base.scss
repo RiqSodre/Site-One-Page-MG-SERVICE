@@ -1,3 +1,14 @@
+.heading::before{
+    content: "";
+	background: #28959e;
+    display: block;
+    height: 10px;
+    position: absolute;
+    margin-top: 20px;
+    top: 16px;
+    width: 100%;
+}
+
 a{
 	outline: none;
 	img{

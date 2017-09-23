@@ -14,8 +14,20 @@
         text-align: center;
         > .form-inline{
           input{
-            border: 1px solid #888888;
-            border-radius: 3px;
+            border: 0;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 2px;
+            display: inline-block;
+            font: 16px $font_main;
+            margin: 0.5%;
+            margin-bottom:15px;
+            min-width: 250px;
+            width: 45%;
+          }
+          select{
+            border: 0;
+            border-radius: 5px;
+            box-shadow: inset 0 1px 2px;
             display: inline-block;
             font: 16px $font_main;
             margin: 0.5%;
@@ -25,8 +37,8 @@
           }
         }
       > textarea{
-          border: 1px solid #888888;
-          border-radius: 3px;
+          border-radius: 5px;
+          box-shadow: inset 0 1px 2px;
           display: inline-block;
           font: 16px $font_main;
           height: 40%;
