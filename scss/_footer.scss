@@ -1,7 +1,7 @@
 body{
 	> footer{
 		background: #1c1c1c;
-		padding: 25px 0 95px;
+		padding: 35px 0 95px;
 		#footer-sidebar{
 			> .footer-widget{
 				@include make-xs-column(12);
@@ -31,6 +31,15 @@ body{
 					color: #777;
 					font: bold 12px $font_main;
 				}
+				iframe{
+					scrolling: no;
+					frameborder: 0;
+					allowTransparency: true;
+					height: 210px;
+					width: 340px;
+					border: none;
+					overflow:hidden;
+				}
 
 				&.footer-widget--about{
 					a{
@@ -45,4 +54,9 @@ body{
 			}
 		}
 	}
+}
+
+.barra{
+		height: 15px;
+		background: #02aac4;
 }

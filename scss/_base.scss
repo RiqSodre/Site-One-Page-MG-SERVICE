@@ -1,12 +1,12 @@
 .heading::before{
     content: "";
 	background: #28959e;
+    width: 100%;
     display: block;
     height: 10px;
     position: absolute;
     margin-top: 20px;
     top: 16px;
-    width: 100%;
 }
 
 a{
