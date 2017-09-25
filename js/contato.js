@@ -1,4 +1,3 @@
-
 $('#input__nome').on('keydown', function(event){
   var aceptChars = [8,9,16,17,20,35,36,37,38,39,40,45,46];
   for(var i = 65; i <= 90; i++){

@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MG Service</title>
+		<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
+		<script src="js/vendors/jquery/jquery.mask.min.js"></script>
+		<script src="js/vendors/jquery/jquery.validate.min.js"></script>
+		<script src="js/vendors/owlcarousel/owl.carousel.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/vendors/plugins.css"> 
 		<link rel="stylesheet" href="css/vendors/owlcarousel/owl.carousel.css">
@@ -12,6 +16,7 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
 	<body>
+		<!--TOPO DO SITE-->
 		<header class="container"> 	
 			<div class="content">
 				<div class="logo-container">
@@ -26,7 +31,7 @@
 				</div>	
 			</div>
 		</header>
-		<!--começo navbar-->
+		<!--NAVBAR-->
 		<div id="navegacao">
 			<div class="container">
 				<div class="content">
@@ -43,10 +48,10 @@
 						    		<!-- Collect the nav links, forms, and other content for toggling -->
 						    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						      		<ul class="nav navbar-nav">
-						        		<li class="active"><a href="#">Inicio</a></li>
-						        		<li><a href="#">Sobre Nós</a></li>
-						        		<li><a href="#">Serviços</a></li>
-						        		<li><a href="#">Contato</a></li>
+						        		<li class="active"><a href="#welcome">Inicio</a></li>
+						        		<li><a href="#about">Sobre Nós</a></li>
+						        		<li><a href="#servicos">Serviços</a></li>
+						        		<li><a href="#contato">Contato</a></li>
 						      		</ul>
 						    	</div><!-- /.navbar-collapse -->
 						</nav>
@@ -61,31 +66,13 @@
 		    </div>
 		</div>
 		<!--FIM SLIDER-->
+		<!--FIM DO TOPO-->
 
-		<!--Titulos-->
-		<div class="container" id="welcome" >
-			<div class="content">
-				<div class="heading">
-					<h2>
-						<span></span>
-						Bem Vindo
-					</h2>
-				</div>
-			</div>
-			<div class="content" id="welcome__itens">
-				<div class="welcome__item">	
-					<a href="">
-						<span class="icon icon--dinheiro"></span>
-					</a>
-				</div>
-			</div>
-			<div class="bemvindo">
-				<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-			</div>
-		</div>
-		<!--FIM BEM-VINDO-->
+		<!--CENTRO-->
+		<!--PÁGINAS-->
 
 		<!--SOBRE NÓS-->
+		<div class="faixa"></div><!--FAIXA INFERIOR-->
 		<div class="container" id="about" >
 			<div class="content">
 				<div class="heading">
@@ -103,6 +90,7 @@
 		<!--FIM SOBRE NÓS-->
 
 		<!--SERVIÇOS -->
+		<div class="faixa"></div><!--FAIXA INFERIOR-->
 		<div class="container" id="servicos">
 			<div class="content">
 				<div class="heading">
@@ -148,6 +136,7 @@
 		<!--FIM SERVIÇOS-->
 
 		<!--CONTATO-->
+		<div class="faixa"></div><!--FAIXA INFERIOR-->
 		<div class="container" id="contato" >
 			<div class="content">
 				<div class="heading">
@@ -208,11 +197,11 @@
 				               <option value="Sugestão">Sugestão</option>
 				               <option value="Outro">Outro</option>
 				            </select>
-				            <!--Div criada para resolução de um bug-->
+				            <!--Div criada para resolução de um bug--> 
 				      		<div class="divError2"></div>
 				        </div>
 				        <!--Div criada para alinhamento do formulário-->
-				        <div class="form-group" id="group__div"></div>
+				        <div class="form-group" id="group__div"></div> 
 				    </div>
 				    <div class="form-inline">
 				    	<div class="form-group" id="group__mensagem">
@@ -236,8 +225,11 @@
 			</div>
 		</div>
 		<!--FIM CONTATO-->
-		<!--FIM TITULOS-->
-		<div class="barra"></div>
+		<!--FIM DAS PÁGINAS-->
+		<!--FIM DO CENTRO-->
+
+		<!--FOOTER-->
+		<div class="barra"></div><!--BARRA AZUL DO FOOTER-->
 		<footer>
 			<div class="container">	
 				<div class="content" id="footer-sidebar">
@@ -254,25 +246,29 @@
 							<span></span> Facebook
 						</h4>
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgivamonteiroconsultordeseguranca%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"></iframe>
-					</div>
+					</div> 
 					<div class="footer-widget">
 						<h4 class="widget__title">
-							<span></span> Desenvolvido por:
+							<span></span> Design e Desenvolvido por:
 						</h4>
-						<a href="#" title="ETi" id="eti">
-							<img src="images/essentials.png"class="img-responsive" alt="#" title="Eti">
+						<a href="#" title="Essentials Technology" id="eti">
+							<img src="images/essentialstech.png"class="img-responsive" alt="#" title="Essentials Technology">
 						</a>
 					</div>
 				</div>
 			</div>
+			<div class="direitos">
+				<div class="container">
+					<div class="content">
+						<p>© 2017 - MG SERVICE | CNPJ.: 18.765.447/0001-17 | Givanildo Monteiro | Versão 1.0 </p>
+					</div>
+				</div>
+			</div>
 		</footer>
+		<!--FIM DO FOOTER-->
 		
-		<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
-		<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
-		<script src="js/vendors/owlcarousel/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/jquery/jquery.validate.min.js"></script>
-		<script src="js/jquery/jquery.mask.min.js"></script>
 		<script src="js/contato.js"></script>
+		<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
 	</body>
 </html>

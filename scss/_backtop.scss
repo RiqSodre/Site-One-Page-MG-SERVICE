@@ -1,0 +1,14 @@
+.back-to-top{
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: url('../images/voltar.png') no-repeat;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+}
+
+.back-to-top:hover{
+	cursor: pointer;
+	background-position: 0 -60px;
+}
