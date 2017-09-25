@@ -4,20 +4,19 @@
 			@include make-xs-column(12);
 			@include make-sm-column(6);
 			@include make-md-column(3);
-
-
 		}
 	}
 }
-
-//content: "";
-//	background: #28959e;
- //   width: 100%;
-   // display: block;
-  //  height: 10px;
-  //  position: absolute;
-  //  margin-top: 20px;
-  //  top: 16px;
+.faixa{
+	content: "";
+	background: #28959e;
+    width: 100%;
+    display: block;
+    height: 10px;
+    position: relative;
+    margin-top: 20px;
+    top: 45px;
+}
 
 #welcome{
 	> .bemvindo{
