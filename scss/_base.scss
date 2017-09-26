@@ -9,6 +9,11 @@ a{
 	@include make-row;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
 .container{
     min-width: 350px;
 	.heading{
