@@ -12,9 +12,9 @@ $(window).scroll(function(){
 	var scrollTopAtual = $(this).scrollTop();
 
 	if (scrollTopAtual > 150){
-		$('#navegacao').addClass('fixed');
+		$('#navegacao').addClass('navegacao-fixa');
 	}
 	else{
-		$('#navegacao').removeClass('fixed');
+		$('#navegacao').removeClass('navegacao-fixa');
 	}
 })
