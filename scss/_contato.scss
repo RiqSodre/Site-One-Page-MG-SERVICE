@@ -6,6 +6,7 @@
   text-align: center;
     > .form__contato{
       display: inline-block;
+      margin-top: 10px;
       max-width: 700px;
       min-height: 330px;
       min-width: 350px;
@@ -13,30 +14,48 @@
       > .form-inline{
         > .form-group{
           display: inline-block;
+          margin-top: 0;
           min-width: 255px;
+          text-align: center;
           width: 47%;
           .campo__obrigatorio{
             font-size: 13px;
             color:#FF0000;
           }
           .divError{
-            color: red;
-            font:  12px $font_main;
-            min-height: 25px;
+            min-height: 20px;
+            position: relative;
+            width: 100%;
+            > label{
+              color: red;
+              font:  12px $font_main;
+              left: 50%;
+              margin-left: -100px;
+              position: absolute;
+              width: 200px;
+            }
           }
           //Div criada para resolução de um bug
           .divError2{
-            color: red;
-            font: 12px $font_main;
-            margin-top: 60px;
+            margin-top: 62px;
             min-height: 17px;
+            position: relative;
+            width: 100%;
+            > label{
+              color: red;
+              font:  12px $font_main;
+              left: 50%;
+              margin-left: -100px;
+              position: absolute;
+              width: 200px;
+            }
           }
-          label{
+          > label{
             float: left;
             font: bold 14px $font_main;
             margin-left: 3%;
           }
-          input{
+          > input{
             border-radius: $border_radius;
             font: $font_form $font_main;
             margin: 0.5%;
@@ -44,7 +63,7 @@
             min-width: 250px;
             width: 98%;
           }
-          select{
+          > select{
             border-radius: $border_radius;
             font: bold $font_form $font_main;
             margin: 0.5%;
@@ -54,17 +73,17 @@
           }
         }
         > #group__assunto{
-            margin-bottom: 0;
+            margin-top: 8px; 
+            min-height: 85px;
             min-width: 335;
             width: 60%;
-            label{
+            > #label__assunto{
               display: inline-block;
               font: bold $font_form $font_main;
-              margin-left: 1.5%;
+              margin-left: 2.5%;
               text-align: left;
-              width: 50%;
             }
-            select{
+            > select{
               border-radius: $border_radius;
               display: inline-block;
               float: left;
@@ -85,7 +104,7 @@
               font: $font_form $font_main;
               text-align: right;
           }
-          textarea{
+          > textarea{
             border-radius: $border_radius;
             display: inline-block;
             font: $font_form $font_main;
@@ -99,7 +118,7 @@
         }
         > #group__enviar{
           margin-bottom: 25px;
-          margin-top: 10px;
+          margin-top: 15px;;
           > #btn__enviar{
               background-color: #EEEEEE;
               border: 1px solid #888888;
@@ -118,21 +137,22 @@
         //Div criada para alinhamento do formulário
         > #group__div{
           margin: 0;
-          min-width: 30%;
+          min-width: 202px;
           width: 34%;
         }
       } 
     }
+    > .contato__telefones{
+      font: bold 20px $font_main;
+      color: #17d64d;
+      margin-top: 20px;
+      width: 100%;
+      > .contato__telefone{
+        display: inline-block;
+        margin: 0;
+        min-width: 475px;
+        width: 47%;
+      }
+    }
   }
-}
-
-.faixa{
-  content: "";
-  background: #28959e;
-    width: 100%;
-    display: block;
-    height: 10px;
-    position: relative;
-    margin-top: 20px;
-    top: 45px;
 }

@@ -8,6 +8,7 @@
 		<script src="js/vendors/jquery/jquery.mask.min.js"></script>
 		<script src="js/vendors/jquery/jquery.validate.min.js"></script>
 		<script src="js/vendors/owlcarousel/owl.carousel.min.js"></script>
+		<script src="https://use.fontawesome.com/7bbbae59e5.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/vendors/plugins.css"> 
 		<link rel="stylesheet" href="css/vendors/owlcarousel/owl.carousel.css">
@@ -163,7 +164,7 @@
 				</div>
 			</div>
 			<div class="content" id="contato__items">
-				<form class="form__contato" id="form__contato" method="post" action="#">
+				<form class="form__contato" id="form__contato" method="post" action="">
 					<div class="form-inline">
 						<div class="form-group">
 							<label for="input__nome" class="control-label">
@@ -202,7 +203,7 @@
 				    </div>	
 				    <div class="form-inline">
 				    	<div class="form-group" id="group__assunto">
-				    		<label for="input__assunto" class="control-label">
+				    		<label for="input__assunto" class="control-label" id="label__assunto">
 				    			Motivo do Contato<span class="campo__obrigatorio">*</span>
 				    		</label>
 							<select id="input__assunto" name="input__assunto" class="form-control">
@@ -234,10 +235,22 @@
 				    </div>
 					<div class="form-inline">
 					  	<div class="form-group" id="group__enviar">
-					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default">Enviar Mensagem</button>
+					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default" onClick="ajustaSubmit()">Enviar Mensagem</button>
 					  	</div>
 					</div>
 				</form>
+				<div class="contato__telefones">
+					<div class="contato__telefone">
+						<h1>
+						<i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+						- (15) 3211-5442</h1>
+					</div>
+					<div class="contato__telefone">
+						<h1>
+						<i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
+						- (15) 99664-4554</h1>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--FIM CONTATO-->
