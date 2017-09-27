@@ -4,7 +4,10 @@ $('#input__nome').on('keydown', function(event){
     aceptChars.push(i);
   }
   if(jQuery.inArray(event.which, aceptChars) === -1){
-    event.preventDefault();
+    if(event.which != 32 || $(input__nome).val().length<=0)
+    {
+      event.preventDefault();
+    }
   }
 });
 $('#input__telefone').mask('(00) 0000-00009');
@@ -21,19 +24,39 @@ $('#input__mensagem').on('input',function(event){
      var char = 400-$(this).val().length;
      $('.char__restantes').text(char);
 });
+//Variável utilizada para não realizar mais que um submit.
+onetime = 1;
+//Método clique do botão enviar, ajustando valor da variável.
+function ajustaSubmit(){
+  onetime = 1;
+};
 $().ready(function(){
   $('#form__contato').validate(
     {
-        erroClass:'divError',
-        errorElement:'span',
+        errorClass:'label__error',
+        errorElement:'label',
         errorPlacement: function(error, element){
-            $(element).next('div').html(error);
+          $(element).next('div').html(error);
         },
         success: function (element){   
-            $(element).next('div').html('');
+          $(element).next('div').html('');
         },
         submitHandler: function(form){
-            form.submit();
+          $(form).submit(function(){
+            if(onetime == 1)
+            {
+              $.ajax({
+              url: 'php/email.php',
+              type: 'POST',
+              data: $(form).serialize(),
+              success: function(data){
+                alert(data);
+              }
+              });
+              onetime++;
+            }        
+            return false;
+          });
         },
         rules: {
             input__nome:{
