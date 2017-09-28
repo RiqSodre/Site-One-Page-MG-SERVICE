@@ -1,91 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Segurança, Portaria, Limpeza, Zeladoria, Recepção, Jardinagem, MG SERVICE.">
-		<title>MG Service</title>
-		<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
-		<script src="js/vendors/jquery/jquery.mask.min.js"></script>
-		<script src="js/vendors/jquery/jquery.validate.min.js"></script>
-		<script src="js/vendors/owlcarousel/owl.carousel.min.js"></script>
-		<script src="https://use.fontawesome.com/7bbbae59e5.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
-		<link rel="stylesheet" href="css/vendors/plugins.css"> 
-		<link rel="stylesheet" href="css/vendors/owlcarousel/owl.carousel.css">
-		<link rel="stylesheet" href="css/vendors/owlcarousel/owl.theme.default.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/responsive.css">
-		<link rel="shortcut icon" href="images/favicon.ico">
-	</head>
-	<body>
-		<!--TOPO DO SITE-->
-		<header class="container" id="top"> 	
-			<div class="content">
-				<div class="logo-container">
-					<div class="logo-container__logo">
-						<img src="images/logo.png" class="img-responsive" alt="#">
-					</div>
+<head>
+	<meta charset="UTF-8">
+	<title>MG Service</title>
+	<meta name="description" content="MG SERVICE, Segurança, Portaria, Limpeza, Zeladoria, Recepção e Jardinagem.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/vendors/jquery/jquery.mask.min.js"></script>
+	<script src="js/vendors/jquery/jquery.validate.min.js"></script>
+	<script src="js/vendors/owlcarousel/owl.carousel.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/vendors/plugins.css"> 
+	<link rel="stylesheet" href="css/vendors/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="css/vendors/owlcarousel/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+	<header id="top" class="container"> 	
+		<div class="content">
+			<div class="logo-container">
+				<div class="logo-container__logo">
+					<img src="images/logo.png" class="img-responsive" alt="">
 				</div>
-				<div class="search-container">
-					<form action="">
-						<input class="form-control search-container__input" type="text" placeholder="Pesquisar no site...">
-					</form>
-				</div>	
 			</div>
+			<div class="search-container">
+				<form action="">
+					<input class="form-control search-container__input" type="text" placeholder="Pesquisar no site...">
+				</form>
+			</div>	
+		</div>
+	</header>
+	<div id="navegacao">
+		<div class="container">
+			<div class="content">
+				<div id="navegacao__content">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+						    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						        <span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+						    </button>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						    <ul class="nav navbar-nav">
+						        <li class="active"><a href="#top">Inicio</a></li>
+						        <li><a href="#about">Sobre Nós</a></li>
+						        <li><a href="#servicos">Serviços</a></li>
+						        <li><a href="#contato">Contato</a></li>
+						        <li><a href="#footer">Localização</a></li>
+						    </ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="slider" class="owl.carousel owl.theme">
+		<div class="item">
+		    <img src="images/slide1.jpg" alt="MG SERVICE">
+		</div>
+	</div>
+	<div class="faixa"></div>
+	<section class="container" id="about" >
+		<header class="content">
+			<h2 class="heading">
+				<span></span>
+				Sobre Nós
+			</h2>
 		</header>
-		<!--NAVBAR-->
-		<div id="navegacao">
-			<div class="container">
-				<div class="content">
-					<div id="navegacao__content">
-						<nav class="navbar navbar-default">
-								<!--MENU RESPONSIVO-->
-								<div class="navbar-header">
-						    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						        		<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-						      		</button>
-						    	</div>
-						    		<!-- Collect the nav links, forms, and other content for toggling -->
-						    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						      		<ul class="nav navbar-nav">
-						        		<li class="active"><a href="#top">Inicio</a></li>
-						        		<li><a href="#about">Sobre Nós</a></li>
-						        		<li><a href="#servicos">Serviços</a></li>
-						        		<li><a href="#contato">Contato</a></li>
-						        		<li><a href="#footer">Localização</a></li>
-						      		</ul>
-						    	</div><!-- /.navbar-collapse -->
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--SLIDER-->
-		<div id="slider" class="owl.carousel owl.theme">
-		    <div class="item">
-		    	<img src="images/slide1.jpg" alt="#">
-		    </div>
-		</div>
-		<!--FIM SLIDER-->
-		<!--FIM DO TOPO-->
-
-		<!--CENTRO-->
-		<!--PÁGINAS-->
-
-		<!--SOBRE NÓS-->
-		<div class="faixa"></div><!--FAIXA INFERIOR-->
-		<div class="container" id="about" >
-			<div class="content">
-				<div class="heading">
-					<h2>
-						<span></span>
-						Sobre Nós
-					</h2>
-				</div>
-			</div>
-			<div class="aboutus">
+		<div class="aboutus">
 				<p>A MG SERVICE foi criada para atuar no segmento de segurança, e entendemos que atender as necessidades do cliente é chave na prestação de um bom serviço. Segurança, qualidade e comprometimento são os princípios de atuação da nossa empresa, na busca pela satisfação do cliente e na construção de uma parceria de negócios duradoura. Disponibilizamos equipamentos de qualidade, e profissionais treinados e capacitados para melhor atender a sua necessidade de forma individual e personalizada, com rapidez e eficiência. Trabalhamos com ética e integridade, tratamos as pessoas com dignidade e respeito e desenvolvemos equipes responsáveis e capacitadas. Temos o compromisso com a excelência de nossos serviços e com o aumento da competitividade de nossos clientes.</p>
 				<br>
 				<b>NOSSA MISSÃO</b><br>
@@ -101,125 +87,114 @@
 				Inovação - buscar soluções criativas e viáveis nas nossas ações;<br>
 				Trabalho em equipe - estar comprometido com o cliente, com projetos e ações da organização;<br>
 				Responsabilidade social - contribuir para o desenvolvimento da sociedade e do meio ambiente.
-
+		</div>
+	</section>
+		<div class="faixa"></div>
+	<section class="container" id="servicos">
+		<header class="content">
+			<h2 class="heading">
+				<span></span>
+				Nossos Serviços
+			</h2>
+		</header>
+		<div class="content" id="servicos__itens">
+			<div class="servicos__item">	
+				<a href="">
+					<span class="icon icon--porteiro"></span>
+					<span class="title">PORTEIRO</span>
+				</a>
+			</div>
+			<div class="servicos__item">	
+				<a href="">
+					<span class="icon icon--recepcao "></span>
+					<span class="title">RECEPÇÃO</span>
+				</a>
+			</div>
+			<div class="servicos__item">	
+				<a href="">
+					<span class="icon icon--limpeza"></span>
+					<span class="title">LIMPEZA</span>
+				</a>
+			</div>
+			<div class="servicos__item">	
+				<a href="">
+					<span class="icon icon--jardinagem"></span>
+					<span class="title">JARDINAGEM</span>
+				</a>
+			</div>
+			<div class="servicos__item">	
+				<a href="">
+					<span class="icon icon--zeladoria"></span>
+					<span class="title">ZELADORIA</span>
+				</a>
 			</div>
 		</div>
-		<!--FIM SOBRE NÓS-->
-
-		<!--SERVIÇOS -->
-		<div class="faixa"></div><!--FAIXA INFERIOR-->
-		<div class="container" id="servicos">
-			<div class="content">
-				<div class="heading">
-					<h2>
-						<span></span>
-						Serviços
-					</h2>
-				</div>
-			</div>
-			<div class="content" id="servico__itens">
-				<div class="servico__item">	
-					<a href="">
-						<span class="icon icon--porteiro"></span>
-						<span class="title">PORTEIRO</span>
-					</a>
-				</div>
-				<div class="servico__item">	
-					<a href="">
-						<span class="icon icon--recepcao "></span>
-						<span class="title">RECEPÇÃO</span>
-					</a>
-				</div>
-				<div class="servico__item">	
-					<a href="">
-						<span class="icon icon--limpeza"></span>
-						<span class="title">LIMPEZA</span>
-					</a>
-				</div>
-				<div class="servico__item">	
-					<a href="">
-						<span class="icon icon--jardinagem"></span>
-						<span class="title">JARDINAGEM</span>
-					</a>
-				</div>
-				<div class="servico__item">	
-					<a href="">
-						<span class="icon icon--zeladoria"></span>
-						<span class="title">ZELADORIA</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<!--FIM SERVIÇOS-->
-
-		<!--CONTATO-->
-		<div class="faixa"></div><!--FAIXA INFERIOR-->
-		<div class="container" id="contato" >
-			<div class="content">
-				<div class="heading">
-					<h2>
-						<span></span>
-						Contato
-					</h2>
-				</div>
-			</div>
-			<div class="content" id="contato__items">
-				<form class="form__contato" id="form__contato" method="post" action="">
-					<div class="form-inline">
-						<div class="form-group">
-							<label for="input__nome" class="control-label">
-								Nome<span class="campo__obrigatorio">*</span>
-							</label>
-				      		<input id="input__nome" name="input__nome" type="text" class="form-control" maxlength="50">
-				      		<div class="divError"></div>
-				      	</div>
-				      	<div class="form-group">
-							<label for="input__email" class="control-label">Email</label>
-				      		<input id="input__email" name="input__email" type="email" class="form-control" maxlength="40">
-				      		<div class="divError"></div>
-				      	</div>
+	</section>
+			<div class="faixa"></div>
+	<section class="container" id="contato" >
+		<header class="content">
+			<h2 class="heading">
+				<span></span>
+				Contato
+			</h2>
+		</header>
+		<div class="content" id="contato__items">
+			<form class="form__contato" id="form__contato" method="post" action="#">
+				<div class="form-inline">
+					<div class="form-group">
+						<label for="input__nome" class="control-label">
+							Nome<span class="campo__obrigatorio">*</span>
+						</label>
+				      	<input id="input__nome" name="input__nome" type="text" class="form-control" maxlength="50">
+				      	<div class="divError"></div>
 				    </div>
-				    <div class="form-inline">
-				        <div class="form-group">
-					    	<label for="input__telefone" class="control-label">
-					    		Telefone<span class="campo__obrigatorio">*</span>
-					    	</label>
-					      	<input id="input__telefone" name="input__telefone" type="tel" class="form-control" placeholder="Telefone ou Celular" maxlength="15">
-				      		<div class="divError"></div>
-				      	</div>	
-				    	<div class="form-group">
-				    		<label for="input__telefonetipo" class="control-label">
-				    			Tipo de Telefone
-				    		</label>
-							<select id="input__telefonetipo" name="input__telefonetipo" class="form-control" >
-				               <option value="">Selecione</option>
-				               <option value="Residencial">Residencial</option>
-				               <option value="Celular">Celular</option>
-				               <option value="Comercial">Comercial</option>
-				               <option value="Outro">Outro</option>
-				            </select>
-				      		<div class="divError"></div>
-				        </div>
+				    <div class="form-group">
+						<label for="input__email" class="control-label">Email</label>
+				      	<input id="input__email" name="input__email" type="email" class="form-control" maxlength="40">
+				      	<div class="divError"></div>
+				    </div>
+				</div>
+				<div class="form-inline">
+				    <div class="form-group">
+					    <label for="input__telefone" class="control-label">
+					    	Telefone<span class="campo__obrigatorio">*</span>
+					    </label>
+					    <input id="input__telefone" name="input__telefone" type="tel" class="form-control" placeholder="Telefone ou Celular" maxlength="15">
+				      	<div class="divError"></div>
 				    </div>	
-				    <div class="form-inline">
-				    	<div class="form-group" id="group__assunto">
-				    		<label for="input__assunto" class="control-label" id="label__assunto">
-				    			Motivo do Contato<span class="campo__obrigatorio">*</span>
-				    		</label>
-							<select id="input__assunto" name="input__assunto" class="form-control">
-				               <option value="">Selecione</option>
-				               <option value="Orçamento">Orçamento</option>
-				               <option value="Duvida">Duvida</option>
-				               <option value="Elogio">Elogio</option>
-				               <option value="Sugestão">Sugestão</option>
-				               <option value="Outro">Outro</option>
-				            </select>
-				            <!--Div criada para resolução de um bug--> 
-				      		<div class="divError2"></div>
-				        </div>
-				        <!--Div criada para alinhamento do formulário-->
-				        <div class="form-group" id="group__div"></div> 
+				    <div class="form-group">
+				    	<label for="input__telefonetipo" class="control-label">
+				    		Tipo de Telefone
+				    	</label>
+						<select id="input__telefonetipo" name="input__telefonetipo" class="form-control" >
+				            <option value="">Selecione</option>
+				            <option value="Residencial">Residencial</option>
+				            <option value="Celular">Celular</option>
+				            <option value="Comercial">Comercial</option>
+				            <option value="Outro">Outro</option>
+				        </select>
+				      	<div class="divError"></div>
 				    </div>
+				</div>	
+				<div class="form-inline">
+				    <div class="form-group" id="group__assunto">
+				    	<label for="input__assunto" class="control-label">
+				    		Motivo do Contato<span class="campo__obrigatorio">*</span>
+				    	</label>
+						<select id="input__assunto" name="input__assunto" class="form-control">
+				            <option value="">Selecione</option>
+				            <option value="Orçamento">Orçamento</option>
+				            <option value="Duvida">Duvida</option>
+				            <option value="Elogio">Elogio</option>
+				            <option value="Sugestão">Sugestão</option>
+				            <option value="Outro">Outro</option>
+				        </select>
+				        <!--Div criada para resolução de um bug--> 
+				      	<div class="divError2"></div>
+				    </div>
+				    <!--Div criada para alinhamento do formulário-->
+				    <div class="form-group" id="group__div"></div> 
+				</div>
 				    <div class="form-inline">
 				    	<div class="form-group" id="group__mensagem">
 						    <label for="input__mensagem" class="control-label" id="mensagem1">
@@ -235,33 +210,16 @@
 				    </div>
 					<div class="form-inline">
 					  	<div class="form-group" id="group__enviar">
-					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default" onClick="ajustaSubmit()">Enviar Mensagem</button>
+					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default">Enviar Mensagem</button>
 					  	</div>
 					</div>
-				</form>
-				<div class="contato__telefones">
-					<div class="contato__telefone">
-						<h1>
-						<i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
-						- (15) 3211-5442</h1>
-					</div>
-					<div class="contato__telefone">
-						<h1>
-						<i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
-						- (15) 99664-4554</h1>
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
-		<!--FIM CONTATO-->
-		<!--FIM DAS PÁGINAS-->
-		<!--FIM DO CENTRO-->
-		<!--FOOTER-->
-		<!--BARRA AZUL DO FOOTER-->
-		<div class="barra"></div>
-		<footer id="footer">
-			<div class="container">	
-				<div class="top">
+	</section>
+	<div class="barra"></div>
+	<footer id="footer">
+		<div class="container">	
+			<div class="top">
 		        <ul>
 		            <li>
 		                <p>Sorocaba - SP</p>
@@ -298,7 +256,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
+		</div>
 			<div class="direitos">
 				<div class="container">
 					<div class="content">
@@ -306,11 +264,9 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!--FIM DO FOOTER-->
-		
-		<script src="js/main.js"></script>
-		<script src="js/contato.js"></script>
-		<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
-	</body>
+	</footer>
+	<script src="js/main.js"></script>
+	<script src="js/contato.js"></script>
+	<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+</body>
 </html>

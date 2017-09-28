@@ -19,43 +19,39 @@ a{
 	background: transparent !important;
 }
 .container{
-    min-width: 350px;
-	.heading{
-	 	@include make-md-column(12);
-	 	position: relative;
-	 	text-align: center;
- 		width: 100%;
-		> h2{
-			margin: 0 0 30px;
-			font: bold 24px $font_main;
-			color: $heading_font_color;
-			background: $heading_color;
-			width: 300px;
-			height: 80px;
-			position: relative;
-			line-height: 75px;
-			display: inline-block;
-			> span{
-				display: text-indent;
-				width: 10px;
-				height: 30px;
-				//background: $heading_color;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
+	.heading,
+	.widget > .widget__title{
+		margin: 0 0 30px;
+		font: bold 18px $font_main;
+		color: #fff;
+		background-color: $heading_color;
+		padding: 0px;
+		position: relative;
+		line-height: 75px;
+		> span{
+			position: absolute;
+			top: 0;
 		}
 	}
-}
+	.heading{
+		text-align: center;
+		left: 0;
+		right: 0;
+	 	@include make-md-column(12);
+	}
+	.widget > .widget__title{
+		> span{
+			left: 0;
+		}
+	}
+}	
+	
 .faixa{
-	content: "";
 	background: #28959e;
     width: 100%;
     display: block;
-    height: 10px;
+    height: 15px;
     position: relative;
-    margin-top: 20px;
-    top: 45px;
 }
 
 .sprite_servicos{

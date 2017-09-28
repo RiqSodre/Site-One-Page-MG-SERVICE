@@ -1,6 +1,6 @@
 #servicos{
-	> #servico__itens{
-		> .servico__item{
+	> #servicos__itens{
+		> .servicos__item{
 			@include make-xs-column(12);
 			@include make-sm-column(6);
 			@include make-md-column(3);
@@ -31,7 +31,7 @@
 				> span.icon{
 					display: inline-block;
 					position: relative;
-					
+					transition:  top 0.5s linear;
 					@extend .sprite_servicos;
 	
 					&.icon--porteiro{
@@ -64,7 +64,7 @@
 			&:hover{
 				background-color: $heading_color;
 			}
-			&,&:hover{
+			&, &:hover{
 				transition: all 0.5s linear;
 			}
 		}
