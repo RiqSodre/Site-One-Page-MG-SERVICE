@@ -1,8 +1,9 @@
 body{
 	> footer{
 		background: #1c1c1c;
+		padding: 20px 0 0;
 		> .container{
-			padding-bottom: 90px 0 0;
+			padding-bottom: 10px;
 		}
 		#footer-sidebar{
 			> .footer-widget{
@@ -13,7 +14,7 @@ body{
 				> h4.widget__title{
 					position: relative;
 					margin: 12px 0;
-					height: 60px;
+					height: 36px;
 					font: 22px $font_main;
 					color: #fff;
 					text-indent: 12px;
@@ -23,24 +24,21 @@ body{
 						position: absolute;
 						top: 0;
 						left: 0;
-						width: 5px;
+						width: 4px;
 						height: 36px;
 						background:#02aac4;
 						
 					}
 				}
-				p{
-					color: #777;
-					font: bold 12px $font_main;
-				}
 				iframe{
-					scrolling: no;
-					frameborder: 0;
-					allowTransparency: true;
 					height: 210px;
 					width: 340px;
 					border: none;
 					overflow:hidden;
+				}
+				p{
+					color: #777;
+					font: bold 11px $font_main;
 				}
 				&.footer-widget--about{
 					a{
@@ -49,7 +47,7 @@ body{
 						width: 60%;
 					}
 					p{
-						width: 95%;	
+						width: 90%;	
 						margin: 20px 0 0;
 					}
 				}
