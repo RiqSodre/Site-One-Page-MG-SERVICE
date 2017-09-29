@@ -2,20 +2,20 @@
   > #contato__items{
   margin-bottom: 40px;
   min-height: 325px;
-  min-width: 350px;
+  min-width: 200px;
   text-align: center;
     > .form__contato{
       display: inline-block;
       margin-top: 10px;
       max-width: 700px;
       min-height: 330px;
-      min-width: 350px;
+      min-width: 200px;
       width: 90%;
       > .form-inline{
         > .form-group{
           display: inline-block;
           margin-top: 0;
-          min-width: 255px;
+          min-width: 200px;
           text-align: center;
           width: 47%;
           .campo__obrigatorio{
@@ -60,7 +60,7 @@
             font: $font_form $font_main;
             margin: 0.5%;
             margin-bottom:5px;
-            min-width: 250px;
+            min-width: 190px;
             width: 98%;
           }
           > select{
@@ -68,7 +68,7 @@
             font: bold $font_form $font_main;
             margin: 0.5%;
             margin-bottom:5px;
-            min-width: 250px;
+            min-width: 190px;
             width: 98%;
           }
         }
@@ -89,18 +89,18 @@
               float: left;
               font: bold $font_form $font_main;
               margin: 0.5%;
-              min-width: 250px;
+              min-width:190px;
               width: 98%;
             }
         }
         > #group__mensagem{
           margin-bottom: 0;
-          width: 94.7%;
+          width: 94%;
           > #mensagem1{
               margin-left: 1.5%;
           }
           > #mensagem2{
-              float:right;
+              float: right;
               font: $font_form $font_main;
               text-align: right;
           }
@@ -110,8 +110,8 @@
             font: $font_form $font_main;
             height: 40%;
             margin-bottom:5px;
-            min-width: 300px;
             min-height: 125px;
+            min-width: 190px;
             resize: none;
             width: 100%;
           }

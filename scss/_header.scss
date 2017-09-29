@@ -1,8 +1,11 @@
 body{
-	background-image: linear-gradient(180deg, #1c1c1c, #1c1c1c, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,  #fff, #fff, #fff,  #fff, #fff, #fff, #fff);
+	//background-image:linear-gradient(#FFF, rgba(20, 100, 100, 0.1));
+	//background-image: linear-gradient(#1c1c1c, #1c1c1c, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff, #fff,  #fff, #fff, #fff,  #fff, #fff, #fff, #fff);
 	> header{
 	padding: 25px 0;
 		> .content{
+			margin-left: 0px;
+			margin-right: 0px;
 			> .logo-container{
 				@include make-xs-column(12);
 				@include make-sm-column(4);
@@ -25,12 +28,21 @@ body{
 					font: 20px $font_main;
 					text-align: center;
 					color: #219C0D;		
-					margin-top: 2px;
-					border: 1px solid #CCCCCC;
+					margin-top: 15px;
 				}
 			}		
 		}
 	}
+
+	.navegacao-fixa{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: rgba(2, 170, 196, 0.8) !important;
+}
+.navegacao-fixa .navbar{
+	background: transparent !important;
+}
 	> #navegacao{
 		background:#02aac4;
 		width: 100%;

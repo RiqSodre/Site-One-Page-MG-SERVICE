@@ -60,11 +60,11 @@
 	</html>
 	";
 	//Enviar email
-	$remetente = "nossoemail";
-	$destino = "monteiro@grupomgservice.com.br";
+	$remetente = "noreply@grupomgservice.com.br";
+	$destino = "riqsodre@gmail.com";
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	$headers .= 'From: Contato site <$email>';
+	$headers .= 'From: Contato site <noreply@grupomgservice.com.br>';
 	$enviaremail = mail($destino, $assunto, $arquivo, $headers, "-f$remetente");
 	if($enviaremail){
 		$retorno = "Mensagem enviada com sucesso, aguarde nosso contato.";

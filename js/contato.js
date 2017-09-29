@@ -25,8 +25,9 @@ $('#input__mensagem').on('input',function(event){
      $('.char__restantes').text(char);
 });
 //Variável utilizada para não realizar mais que um submit.
-onetime = 1;
+onetime=1;
 //Método clique do botão enviar, ajustando valor da variável.
+document.getElementById("btn__enviar").addEventListener("click", ajustaSubmit, false);
 function ajustaSubmit(){
   onetime = 1;
 };
