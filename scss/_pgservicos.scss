@@ -1,0 +1,72 @@
+#pgservicos{
+	> #servicos__itens{
+		> .servicos__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(3);
+			
+			cursor: pointer;
+			min-height: 200px;
+			background-color: #67eaea;
+			background-clip: content-box;
+			margin-bottom: 40px;
+			> a{
+				display: block;
+				height: 150px;
+				width: 100%;
+				text-align: center;
+				position: relative;
+				> span.title{
+					 color: #fff;
+					 font: 26px  $font_main;
+					 margin-top: 110px;
+					 position: absolute;
+					 width: 100%;
+					 text-align: center;
+					 display: none;
+				}
+				&:hover > span.title{
+					display: block;
+				}
+				> span.icon{
+					display: inline-block;
+					position: relative;
+					transition:  top 0.5s linear;
+					@extend .sprite_servicos;
+	
+					&.icon--porteiro{
+						@include sprite-define(90px, 87px, -10px, -217px);
+						top: (150px-87px)/2;
+					}
+					&.icon--recepcao{
+						@include sprite-define(100px, 90px, -5px, -430px);
+						top: (150px-90px)/2;
+					}
+					&.icon--limpeza{
+					  	@include sprite-define(100px, 84px, -5px, -115px);
+					  	top: (150px-84px)/2;
+					}
+					&.icon--jardinagem{
+						@include sprite-define(100px, 82px, -5px, -9px);
+						top: (150px-82px)/2;
+					}
+					&.icon--zeladoria{
+						@include sprite-define(100px, 88px, -5px, -535px);
+						top: (150px-88px)/2;
+					}
+				}
+				&:hover > span{
+					top: 15px !important;
+					transition: top 0.2s linear;
+					}
+			}
+
+			&:hover{
+				background-color: $heading_color;
+			}
+			&, &:hover{
+				transition: all 0.5s linear;
+			}
+		}
+	}
+}
