@@ -24,13 +24,6 @@ $('#input__mensagem').on('input',function(event){
      var char = 400-$(this).val().length;
      $('.char__restantes').text(char);
 });
-//Variável utilizada para não realizar mais que um submit.
-onetime=1;
-//Método clique do botão enviar, ajustando valor da variável.
-document.getElementById("btn__enviar").addEventListener("click", ajustaSubmit, false);
-function ajustaSubmit(){
-  onetime = 1;
-};
 $().ready(function(){
   $('#form__contato').validate(
     {
@@ -43,21 +36,15 @@ $().ready(function(){
           $(element).next('div').html('');
         },
         submitHandler: function(form){
-          $(form).submit(function(){
-            if(onetime == 1)
-            {
-              $.ajax({
-              url: 'php/email.php',
-              type: 'POST',
-              data: $(form).serialize(),
-              success: function(data){
-                alert(data);
-              }
-              });
-              onetime++;
-            }        
-            return false;
-          });
+            $.ajax({
+            url: 'php/email.php',
+            type: 'POST',
+            data: $(form).serialize(),
+            success: function(data){
+              alert(data);
+            }
+            });     
+          return false;
         },
         rules: {
             input__nome:{

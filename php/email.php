@@ -4,8 +4,10 @@
 	if(isset($POST['input__email'])){
 		$email = $_POST['input__email'];
 	}
-	else{
-		$email = 'Não informado';
+	if (isset($_POST["input__email"]) && !empty($_POST["input__email"])) {
+	    $email = $_POST['input__email']; 
+	}else{  
+	    $email = "Não informado.";
 	}
 	$telefone = $_POST['input__telefone'];
 	$telefonetipo = $_POST['input__telefonetipo'];
@@ -61,10 +63,10 @@
 	";
 	//Enviar email
 	$remetente = "noreply@grupomgservice.com.br";
-	$destino = "riqsodre@gmail.com";
+	$destino = "contato@grupomgservice.com.br";
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-	$headers .= 'From: Contato site <noreply@grupomgservice.com.br>';
+	$headers .= 'From: Contato Site <noreply@grupomgservice.com.br>';
 	$enviaremail = mail($destino, $assunto, $arquivo, $headers, "-f$remetente");
 	if($enviaremail){
 		$retorno = "Mensagem enviada com sucesso, aguarde nosso contato.";
