@@ -3,14 +3,14 @@ var altura = $('#navegacao').offset().top;
 
 linksNavBar.click(function(event){
 	var position = $(this.hash).offset() ? $(this.hash).offset() : '' ;
-	var heightMenu = ($(window).scrollTop() < altura) ? 100 : 65;
+	var heightMenu = ($(window).scrollTop() < altura) ? 115 : 65;
 	event.preventDefault();
 
 	if(!$(this.hash).offset()){
 	   $('ul.navbar-nav > li').removeClass('active');
 	   $(this).parent().addClass('active');
 	} else {
-		$("html, body").animate({scrollTop:position.top-heightMenu}, 1200);
+		$("html, body").animate({scrollTop:position.top-heightMenu}, 1600);
 	}
 });
 
