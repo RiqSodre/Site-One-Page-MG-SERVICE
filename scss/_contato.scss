@@ -142,16 +142,22 @@
         }
       } 
     }
+    > .fale__conosco{
+      font: bold 70% $font_main;
+      margin-top: 40px;
+      margin-bottom: -15px;
+      text-align: center;
+    }
     > .contato__telefones{
-      font: bold 20px $font_main;
       color: #17d64d;
-      margin-top: 20px;
+      display: flex;
+      font: bold 90% $font_main;
+      justify-content: center;
       width: 100%;
       > .contato__telefone{
-        display: inline-block;
-        margin: 0;
-        min-width: 475px;
-        width: 47%;
+        height: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
       }
     }
   }
