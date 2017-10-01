@@ -1,12 +1,14 @@
-#about{
-	> .aboutus{
+@media only screen and (max-width: 2000px){
+	#about{
+		text-align: center;
+		> .aboutus{
 			display: inline-block;
 			font: 18px $font_main;
 			margin-bottom: 50px;
 			margin-top: -40px;
-			width: 100%;
+			width: 79.5%;
 			> .subtitle{
-				margin-left: 10%;
+				text-align: left;
 				> h2{
 					color: #242a3a;
 					> .max{
@@ -31,12 +33,12 @@
 					border: 2px solid white;
 					border-radius: 10px;
 					color: white;
+					height: 400px;
 					margin-top: 2%;
 					margin-right: 2%;
 					margin-left: 2%;
 					margin-bottom: 2%;
 					padding: 8px;
-					height: 400px;
 					width: 30%;
 					p{
 						font: 13px $font_main;
@@ -48,12 +50,12 @@
 					background-color: #3e4d74;
 					border-radius: 10px;
 					color: white;
+					height: 350px;
 					margin-top: 5%;
 					margin-right: 4%;
 					margin-left: 2%;
 					margin-bottom: 5%;
 					padding: 8px;
-					height: 350px;
 					width: 30%;
 					p{
 						font: 13px $font_main;
@@ -68,42 +70,69 @@
 					}
 				}
 			}
-			> .aboutus__itens_P{
-				background-color: #242a3a;
-				border-radius: 4px;
-				display: flex;
-				justify-content: center;
-				margin: 0 auto;
+		}			
+	}
+}
+@media only screen and (max-width: 1200px) {
+	#about{
+		text-align: center;
+	> .aboutus{
+			display: inline-block;
+			font: 18px $font_main;
+   		 	height:auto;
+			margin-bottom: 50px;
+			margin-top: -40px;
+			width:auto;
+			> .subtitle{
+				text-align: left;
+				> h2{
+					color: #242a3a;
+					> .max{
+						color: #016776;
+						font: bold 40px $font_main;
+						margin-left: 3%;
+					}
+				}
+			}
+			> .aboutus__itens_G{
+				border-radius: 6px;
+				display: inline-block;
+    			height:auto;
 				margin-top: -10px;
-				min-height: 400px;
-				min-width: 900px;
+				min-width: 100%;
+				position: relative;
 				text-align: center;
-				width: 80%;
 				> .presentation{
 					border: 2px solid white;
 					border-radius: 10px;
 					color: white;
-					margin-top: 2%;
-					margin-right: 2%;
-					margin-left: 2%;
-					margin-bottom: 2%;
-					height: 400px;
-					width: 30%;
+    				height: auto;
+					margin: 0 auto;
+					margin-top: 20px;
+					margin-bottom: 20px;
+					max-width: 630px;
+					padding: 8px;
+					width: 90%; 
+					p{
+						font: 13px $font_main;
+						text-align: justify;
+						text-indent: 15px;
+					}
 				}
 				> .about__item{
 					background-color: #3e4d74;
 					border-radius: 10px;
 					color: white;
-					margin-top: 5%;
-					margin-right: 4%;
-					margin-left: 2%;
-					margin-bottom: 5%;
+    				height: auto;
+					margin: 0 auto;
+					margin-bottom: 20px;
+					max-width: 630px;
 					padding: 8px;
-					height: 350px;
-					width: 30%;
+  					width: 90%; 
 					p{
 						font: 13px $font_main;
 						text-align: justify;
+						text-indent: 15px;
 					}
 					ul{
 						font: 13px $font_main;
@@ -113,5 +142,6 @@
 					}
 				}
 			}
-		}
+		}			
+	}
 }
