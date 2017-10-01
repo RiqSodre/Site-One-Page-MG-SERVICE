@@ -1,8 +1,117 @@
 #about{
 	> .aboutus{
+			display: inline-block;
 			font: 18px $font_main;
 			margin-bottom: 50px;
-			text-indent: 80px;
-			text-align: justify;
+			margin-top: -40px;
+			width: 100%;
+			> .subtitle{
+				margin-left: 10%;
+				> h2{
+					color: #242a3a;
+					> .max{
+						color: #016776;
+						font: bold 40px $font_main;
+						margin-left: 3%;
+					}
+				}
+			}
+			> .aboutus__itens_G{
+				background-color: #242a3a;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				margin-top: -10px;
+				min-height: 400px;
+				min-width: 900px;
+				text-align: center;
+				width: 80%;
+				> .presentation{
+					border: 2px solid white;
+					border-radius: 10px;
+					color: white;
+					margin-top: 2%;
+					margin-right: 2%;
+					margin-left: 2%;
+					margin-bottom: 2%;
+					padding: 8px;
+					height: 400px;
+					width: 30%;
+					p{
+						font: 13px $font_main;
+						text-align: justify;
+						text-indent: 15px;
+					}
+				}
+				> .about__item{
+					background-color: #3e4d74;
+					border-radius: 10px;
+					color: white;
+					margin-top: 5%;
+					margin-right: 4%;
+					margin-left: 2%;
+					margin-bottom: 5%;
+					padding: 8px;
+					height: 350px;
+					width: 30%;
+					p{
+						font: 13px $font_main;
+						text-align: justify;
+						text-indent: 15px;
+					}
+					ul{
+						font: 13px $font_main;
+						margin-left: 20px;
+						padding-left: 0px;
+						text-align: left;
+					}
+				}
+			}
+			> .aboutus__itens_P{
+				background-color: #242a3a;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				margin-top: -10px;
+				min-height: 400px;
+				min-width: 900px;
+				text-align: center;
+				width: 80%;
+				> .presentation{
+					border: 2px solid white;
+					border-radius: 10px;
+					color: white;
+					margin-top: 2%;
+					margin-right: 2%;
+					margin-left: 2%;
+					margin-bottom: 2%;
+					height: 400px;
+					width: 30%;
+				}
+				> .about__item{
+					background-color: #3e4d74;
+					border-radius: 10px;
+					color: white;
+					margin-top: 5%;
+					margin-right: 4%;
+					margin-left: 2%;
+					margin-bottom: 5%;
+					padding: 8px;
+					height: 350px;
+					width: 30%;
+					p{
+						font: 13px $font_main;
+						text-align: justify;
+					}
+					ul{
+						font: 13px $font_main;
+						margin-left: 20px;
+						padding-left: 0px;
+						text-align: left;
+					}
+				}
+			}
 		}
 }
