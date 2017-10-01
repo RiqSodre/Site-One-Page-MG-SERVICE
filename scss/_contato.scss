@@ -1,12 +1,20 @@
 #contato{
+  > .formulario__ico{
+    display: flex;
+    font: bold 18px $font_main;
+    justify-content: center;
+    margin-bottom: 2px;
+    label{
+      margin-top: -10px;
+    }
+  }
   > #contato__items{
-  margin-bottom: 40px;
-  min-height: 325px;
-  min-width: 200px;
-  text-align: center;
+    margin-bottom: 40px;
+    min-height: 325px;
+    min-width: 200px;
+    text-align: center;
     > .form__contato{
       display: inline-block;
-      margin-top: 10px;
       max-width: 700px;
       min-height: 330px;
       min-width: 200px;
@@ -143,7 +151,7 @@
       } 
     }
     > .fale__conosco{
-      font: bold 70% $font_main;
+      font: bold 20px $font_main;
       margin-top: 40px;
       margin-bottom: -15px;
       text-align: center;
