@@ -1,6 +1,7 @@
 @media only screen and (max-width: 2000px){
 	#about{
 		text-align: center;
+		letter-spacing: 0.1px;
 		> .aboutus{
 			display: inline-block;
 			font: 18px $font_main;
@@ -34,11 +35,12 @@
 					border-radius: 10px;
 					color: white;
 					height: 400px;
-					margin-top: 2%;
-					margin-right: 2%;
-					margin-left: 2%;
-					margin-bottom: 2%;
+					margin-top: 20px;
+					margin-right: 20px;
+					margin-left: 20px;
+					margin-bottom: 20px;
 					padding: 8px;
+					padding-top: 15px;
 					width: 30%;
 					p{
 						font: 13px $font_main;
@@ -51,11 +53,12 @@
 					border-radius: 10px;
 					color: white;
 					height: 350px;
-					margin-top: 5%;
-					margin-right: 4%;
-					margin-left: 2%;
-					margin-bottom: 5%;
+					margin-top: 45px;
+					margin-right: 20px;
+					margin-left: 20px;
+					margin-bottom: 45px;
 					padding: 8px;
+					padding-top: 15px;
 					width: 30%;
 					p{
 						font: 13px $font_main;
@@ -76,6 +79,7 @@
 @media only screen and (max-width: 1200px) {
 	#about{
 		text-align: center;
+		letter-spacing: 0.1px;
 	> .aboutus{
 			display: inline-block;
 			font: 18px $font_main;
@@ -112,6 +116,7 @@
 					margin-bottom: 20px;
 					max-width: 630px;
 					padding: 8px;
+					padding-top: 15px;
 					width: 90%; 
 					p{
 						font: 13px $font_main;
@@ -128,6 +133,7 @@
 					margin-bottom: 20px;
 					max-width: 630px;
 					padding: 8px;
+					padding-top: 15px;
   					width: 90%; 
 					p{
 						font: 13px $font_main;
