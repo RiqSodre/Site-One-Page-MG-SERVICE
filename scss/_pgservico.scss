@@ -1,0 +1,37 @@
+#pgservicos{
+	margin-bottom: 30px;
+	> .services{
+		> .services__itens{
+			//geral
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(3);
+	
+			min-height: 400px;
+			width: 100%;
+			background-clip: content-box;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			margin-left: 65px;
+			margin-right: 10px;
+			border-radius: 5px 20px 5px;
+			b{
+				padding: 5px;
+				font: bold 24px $font_main;
+			}
+			p{
+				text-align: justify;
+			}
+			background: #F8F4F4;
+			&:hover{
+				border: 2px solid #000;
+				color:#fff;
+				box-shadow: 5px 10px #000;
+				background-color: #016776;
+			}
+			&, &:hover{
+				transition: all 0.2s linear;
+			}
+		}
+	}
+}

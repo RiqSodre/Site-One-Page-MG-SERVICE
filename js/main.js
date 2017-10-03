@@ -3,7 +3,7 @@ var altura = $('#navegacao').offset().top;
 
 linksNavBar.click(function(event){
 	var position = $(this.hash).offset() ? $(this.hash).offset() : '' ;
-	var heightMenu = ($(window).scrollTop() < altura) ? 115 : 65;
+	var heightMenu = ($(window).scrollTop() < altura) ? 115	 : 65;
 	event.preventDefault();
 
 	if(!$(this.hash).offset()){
@@ -45,3 +45,4 @@ function CheckActive()
 		}
 	});
 }
+//animação serviços
