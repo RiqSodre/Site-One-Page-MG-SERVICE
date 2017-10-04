@@ -39,7 +39,7 @@ function CheckActive()
 	linksNavBar.each(function(){
 		var positionTop = $(this.hash).offset() ? $(this.hash).offset().top : 999999;
 
-		if(positionTop-250 <= $(window).scrollTop()){
+		if(positionTop-255 <= $(window).scrollTop()){
 			$('ul.navbar-nav > li').removeClass('active');
 			$(this).parent().addClass('active');
 		}

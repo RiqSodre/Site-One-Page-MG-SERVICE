@@ -1,5 +1,5 @@
 body{
-	
+	background-color: #212121;
 }
 a{
 	outline: none;
@@ -43,7 +43,7 @@ a{
 	.heading{ 
 		box-shadow: 0 3px 10px #1c1c1c;
 		margin-top: -15px;
-		border: 5px solid #016776;
+		border: 5px solid #01579B;
 		text-align: center;
 		left: 0;
 		right: 0;
@@ -57,9 +57,8 @@ a{
 }	
 	
 .faixa{	
-	box-shadow: 0 3px 8px #1c1c1c;
 	top: 35px;
-	background: #016776;
+	background: #01579B;
     display: block;
     height: 15px;
     position: relative;

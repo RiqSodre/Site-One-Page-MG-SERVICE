@@ -7,7 +7,7 @@
 			
 			cursor: pointer;
 			min-height: 200px;
-			background-color: #67eaea;
+			background-color: #2D587B;
 			background-clip: content-box;
 			margin-bottom: 40px;
 			> a{
@@ -62,7 +62,7 @@
 			}
 
 			&:hover{
-				background-color: $heading_color;
+				background-color: #01579B;
 			}
 			&, &:hover{
 				transition: all 0.5s linear;

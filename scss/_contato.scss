@@ -1,5 +1,6 @@
 #contato{
   > .formulario__ico{
+    color: #fff;
     display: flex;
     font: bold 18px $font_main;
     justify-content: center;
@@ -9,6 +10,7 @@
     }
   }
   > #contato__items{
+    color: #fff;
     margin-bottom: 40px;
     min-height: 325px;
     min-width: 200px;
@@ -135,10 +137,12 @@
               min-width: 200px;
               width: 30%;
               &:hover{
-                background-color: $heading_color;
+                color: #fff;
+                background-color: #03A9F4;
+                border: 1px solid #03A9F4;
               }
               &,&:hover{
-                transition: all 0.5s linear;
+                transition: all 0.2s linear;
               }
             }
           }
@@ -157,7 +161,7 @@
       text-align: center;
     }
     > .contato__telefones{
-      color: #17d64d;
+      color: #15ff70;
       display: flex;
       font: bold 90% $font_main;
       justify-content: center;
