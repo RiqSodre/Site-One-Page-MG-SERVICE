@@ -1,39 +1,129 @@
 #pgservicos{
-	margin-bottom: 30px;
-	> .services{
-		> .services__itens{
-			//geral
-			@include make-xs-column(12);
-			@include make-sm-column(4);
-			@include make-md-column(3);
-	
-			min-height: 400px;
-			width: 100%;
-			background-clip: content-box;
-			margin-top: 30px;
-			margin-bottom: 20px;
-			margin-left: 65px;
-			margin-right: 10px;
-			border-radius: 5px 20px 5px;
-			b{
-				padding: 5px;
-				font: bold 24px $font_main;
-			}
-			p{
-				text-align: justify;
-			}
-			background: #F8F4F4;
-			&:hover{
-				border: 2px solid #000;
-				color:#fff;
-				box-shadow: 5px 10px #000;
-				background-color: #016776;
-			}
-			&, &:hover{
-				transition: all 0.2s linear;
-			}
-		}
+	margin-bottom: 80px;
+	> #services{
+		//div que contém os serviços//
+		@include make-xs-column(12);
+		@include make-sm-column(4);
+		@include make-md-column(3);
 
-		background-color: #3242a3a;
+		width: 100% !important;
+		text-align: center;
+		border: 2px solid #F1D30C;
+
+			> .services__itens{
+				//div com os serviços//
+				border: 2px solid #F1d;
+				display: flex;
+				justify-content: center;
+				// display: inline-block;
+				max-width: 850px;
+				text-align: right;
+				min-height: 350px; 
+				height: auto;
+				width: 100%;
+				margin-top: 50px;
+				margin-bottom: 30px;
+				background: #F8F4F4;
+
+				//titulo//
+				h1{
+					text-align: center;
+					font: bold 24px $font_main;
+				}
+				//texto//
+				p{
+					padding-right: 20px;
+					font: 18px $font_main;
+					text-align: justify;
+				}
+
+				//hover para animação//
+				&:hover{
+					border: 2px solid #000;
+					color:#fff;
+					box-shadow: 5px 10px #000;
+					background-color: #3242a3;
+				}
+				&, &:hover{
+					transition: all 0.2s linear;
+				}
+				
+				//PORTARIA//
+				.icon{
+					border: 2px solid blue;
+					margin-top: -50px;
+					height: 150px;
+					width: 150px;
+					text-align: left;
+					display: inline-block;
+						> #icon__limpeza{
+							display: inline-block;
+							text-align: left;
+							border: 2px solid red;
+						}
+				}
+				> #portaria{
+					border: 2px solid green;
+					display: inline-block;
+					height: 250px;
+					width: 600px;
+					margin-top: 40px;
+						> .portaria{
+							border: 2px solid blue;
+						display: inline-block;
+						text-align: center;
+						width: 590px;
+					}
+				}
+				//RECEPÇÃO//
+				> #recepcao{
+					display: inline-block;
+					height: 250px;
+					width: 600px;
+					margin-top: 40px;
+						> .recepcao{
+						display: inline-block;
+						text-align: center;
+						width: 590px;
+					}
+				}
+				//LIMPEZA//
+				> #limpeza{
+					display: inline-block;
+					height: 250px;
+					width: 600px;
+					margin-top: 40px;
+						> .limpeza{
+						display: inline-block;
+						text-align: center;
+						width: 590px;
+					}
+				}
+
+				//JARDINAGEM//
+				> #jardinagem{
+					display: inline-block;
+					height: 250px;
+					width: 600px;
+					margin-top: 40px;
+						> .jardinagem{
+						display: inline-block;
+						text-align: center;
+						width: 590px;
+					}
+				}
+				//ZELADORIA//
+				> #zeladoria{
+					display: inline-block;
+					height: 250px;
+					width: 600px;
+					margin-top: 35px;
+						> .zeladoria{
+						display: inline-block;
+						text-align: center;
+						width: 590px;
+					}
+				}
+		}
 	}
 }
