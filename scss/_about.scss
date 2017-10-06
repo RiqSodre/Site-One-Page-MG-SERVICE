@@ -1,4 +1,4 @@
-	@media only screen and (max-width: 2000px){
+@media only screen and (max-width: 2000px){
 	#about{
 		color: #fff;
 		text-align: center;
@@ -133,73 +133,32 @@
 }
 @media only screen and (max-width: 1200px) {
 	#about{
-		text-align: center;
-		letter-spacing: 0.1px;
 	> .aboutus{
-			display: inline-block;
-			font: 18px $font_main;
    		 	height:auto;
-			margin-bottom: 20px;
-			margin-top: -40px;
 			width:auto;
-			> .subtitle{
-				text-align: left;
-				> h2{
-					color: #242a3a;
-					> .max{
-						color: #016776;
-						font: bold 40px $font_main;
-						margin-left: 3%;
-					}
-				}
-			}
 			> .aboutus__itens_G{
 				border-radius: 6px;
 				display: inline-block;
     			height:auto;
-				margin-top: -10px;
 				min-width: 100%;
 				position: relative;
 				text-align: center;
 				> .presentation{
-					border: 2px solid white;
-					border-radius: 10px;
-					color: white;
     				height: auto;
 					margin: 0 auto;
 					margin-top: 20px;
 					margin-bottom: 20px;
 					max-width: 630px;
-					padding: 8px;
-					padding-top: 15px;
 					width: 90%; 
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
 				}
 				> .about__item{
-					background-color: #3e4d74;
 					border-radius: 10px;
 					box-shadow: 0 3px 8px #1c1c1c;
-					color: white;
     				height: auto;
 					margin: 0 auto;
 					margin-bottom: 20px;
 					max-width: 630px;
-					padding: 8px;
-					padding-top: 15px;
   					width: 90%; 
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
-					ul{
-						font: 13px $font_main;
-						margin-left: 20px;
-						padding-left: 0px;
-						text-align: left;
-					}
 				}
 			}
 		}			
