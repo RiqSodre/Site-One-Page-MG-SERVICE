@@ -5,25 +5,29 @@
 		@include make-xs-column(12);
 		@include make-sm-column(4);
 		@include make-md-column(3);
-
 		width: 100% !important;
+		display: inline-block;
 		text-align: center;
-		border: 2px solid #F1D30C;
-
 			> .services__itens{
 				//div com os serviços//
-				border: 2px solid #F1d;
-				display: flex;
-				justify-content: center;
-				// display: inline-block;
+				display: inline-block;
+				text-align: center;
 				max-width: 850px;
-				text-align: right;
 				min-height: 350px; 
-				height: auto;
 				width: 100%;
 				margin-top: 50px;
 				margin-bottom: 30px;
 				background: #F8F4F4;
+				border-radius: 5px 20px 5px;
+
+				img{
+					filter: blur(2px);
+					&:hover{	
+						filter: blur(0px);
+					}
+				}
+				
+
 
 				//titulo//
 				h1{
@@ -32,14 +36,12 @@
 				}
 				//texto//
 				p{
-					padding-right: 20px;
 					font: 18px $font_main;
-					text-align: justify;
+					text-align: center;
 				}
 
 				//hover para animação//
-				&:hover{
-					border: 2px solid #000;
+				&:hover{	
 					color:#fff;
 					box-shadow: 5px 10px #000;
 					background-color: #3242a3;
@@ -47,82 +49,52 @@
 				&, &:hover{
 					transition: all 0.2s linear;
 				}
-				
+
 				//PORTARIA//
-				.icon{
-					border: 2px solid blue;
-					margin-top: -50px;
-					height: 150px;
-					width: 150px;
-					text-align: left;
-					display: inline-block;
-						> #icon__limpeza{
-							display: inline-block;
-							text-align: left;
-							border: 2px solid red;
-						}
-				}
 				> #portaria{
-					border: 2px solid green;
 					display: inline-block;
-					height: 250px;
-					width: 600px;
-					margin-top: 40px;
-						> .portaria{
-							border: 2px solid blue;
-						display: inline-block;
-						text-align: center;
-						width: 590px;
-					}
+					margin-top: 30px;
+					padding-left: 30px;
+					padding-right: 30px;
+					text-align: center;
+					width: 100%;
 				}
 				//RECEPÇÃO//
 				> #recepcao{
 					display: inline-block;
-					height: 250px;
-					width: 600px;
-					margin-top: 40px;
-						> .recepcao{
-						display: inline-block;
-						text-align: center;
-						width: 590px;
-					}
+					margin-top: 45px;
+					padding-left: 30px;
+					padding-right: 30px;
+					text-align: center;
+					width: 100%;
 				}
 				//LIMPEZA//
 				> #limpeza{
 					display: inline-block;
-					height: 250px;
-					width: 600px;
-					margin-top: 40px;
-						> .limpeza{
-						display: inline-block;
-						text-align: center;
-						width: 590px;
-					}
+					margin-top: 45px;
+					padding-left: 30px;
+					padding-right: 30px;
+					text-align: center;
+					width: 100%;
 				}
 
 				//JARDINAGEM//
 				> #jardinagem{
 					display: inline-block;
-					height: 250px;
-					width: 600px;
-					margin-top: 40px;
-						> .jardinagem{
-						display: inline-block;
-						text-align: center;
-						width: 590px;
-					}
+					margin-top: 45px;
+					padding-left: 30px;
+					padding-right: 30px;
+					text-align: center;
+					width:  100%;
 				}
 				//ZELADORIA//
 				> #zeladoria{
 					display: inline-block;
-					height: 250px;
-					width: 600px;
-					margin-top: 35px;
-						> .zeladoria{
-						display: inline-block;
-						text-align: center;
-						width: 590px;
-					}
+					margin-top: 45px;
+					padding-left: 30px;
+					padding-right: 30px;
+					width:  100%;
+					text-align: center;
 				}
 		}
 	}

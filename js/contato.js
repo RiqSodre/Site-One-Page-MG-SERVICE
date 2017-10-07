@@ -15,21 +15,21 @@ $('#input__telefone').blur(function(event) {
    if($(this).val().length == 15){
       $('#input__telefone').mask('(00) 00000-0009');
       $('#input__telefonetipo').val('Celular');
-   } else if($(this).val().length == 14){
-      $('#input__telefone').mask('(00) 0000-00009');
-      $('#input__telefonetipo').val('Residencial');
+        } else if($(this).val().length == 14){
+        $('#input__telefone').mask('(00) 0000-00009');
+        $('#input__telefonetipo').val('Residencial');
    }
 });
 $('#input__mensagem').on('input',function(event){
-     var char = 400-$(this).val().length;
-     $('.char__restantes').text(char);
+        var char = 400-$(this).val().length;
+        $('.char__restantes').text(char);
 });
 $().ready(function(){
   $('#form__contato').validate(
     {
-        errorClass:'label__error',
-        errorElement:'label',
-        errorPlacement: function(error, element){
+          errorClass:'label__error',
+          errorElement:'label',
+          errorPlacement: function(error, element){
           $(element).next('div').html(error);
         },
         success: function (element){   
