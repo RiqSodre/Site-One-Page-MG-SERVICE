@@ -14,7 +14,7 @@
 	$assunto = $_POST['input__assunto'];
 	$mensagem = $_POST['input__mensagem'];
 	//Corpo E-mail
-	$arquivo = str_replace(array('$assunto', '$nome', '$email', '$telefone', '%telefonetipo', '$mensagem'), array($assunto, $nome, $email, $telefone, $telefonetipo, $mensagem) ,file_get_contents('../mail.php'));
+	$arquivo = str_replace(array('$assunto', '$nome', '$email', '$telefone', '%telefonetipo', '$mensagem'), array($assunto, $nome, $email, $telefone, $telefonetipo, $mensagem) ,file_get_contents('../mail.html'));
 	//Enviar email
 	$remetente = "noreply@grupomgservice.com.br";
 	$destino = "contato@grupomgservice.com.br";
