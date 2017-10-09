@@ -1,4 +1,4 @@
-	@media only screen and (max-width: 2000px){
+@media only screen and (max-width: 2000px){
 	#about{
 		color: #fff;
 		text-align: center;
@@ -20,7 +20,7 @@
 					}
 				}
 			}
-			> .aboutus__itens_G{
+			> .aboutus__itens{
 				background-color: #242a3a;
 				border-radius: 4px;
 				display: flex;
@@ -103,12 +103,26 @@
 					border: 0.5px solid #888888;
 					border-radius: 10px;
 					display: inline-block;
+					color: white;
 					height: auto;
 					margin: 0 auto;
 					margin-bottom: 20px;
 					padding: 8px;
 					width: 90%;
 					text-align: center;
+					&:hover{
+						border: 0.5px solid #03A9F4;
+						box-shadow: 0px 2px 5px #01579B;
+					}
+					&:hover > .item__ico{
+						background-color: #03A9F4;
+					} 
+					> .item__ico{
+						transition: all 0.3s linear;
+					}
+					&, &:hover{
+						transition: all 0.2s linear;
+					}
 					> .item__ico{
 						background-color:#2D587B;
 						border-radius: 50%;
@@ -119,13 +133,14 @@
 						text-align: center;
 						width: 60px;
 						i{
-							margin-top: 16px;
+							margin-top: 17.5px;
 						}
 					}
 				}
 				h2{
 					display: inline-block;
 					font: bold 18px $font_main;
+					color: white;
 				}
 			}
 		}			
@@ -133,73 +148,32 @@
 }
 @media only screen and (max-width: 1200px) {
 	#about{
-		text-align: center;
-		letter-spacing: 0.1px;
 	> .aboutus{
-			display: inline-block;
-			font: 18px $font_main;
    		 	height:auto;
-			margin-bottom: 20px;
-			margin-top: -40px;
 			width:auto;
-			> .subtitle{
-				text-align: left;
-				> h2{
-					color: #242a3a;
-					> .max{
-						color: #016776;
-						font: bold 40px $font_main;
-						margin-left: 3%;
-					}
-				}
-			}
-			> .aboutus__itens_G{
+			> .aboutus__itens{
 				border-radius: 6px;
 				display: inline-block;
     			height:auto;
-				margin-top: -10px;
 				min-width: 100%;
 				position: relative;
 				text-align: center;
 				> .presentation{
-					border: 2px solid white;
-					border-radius: 10px;
-					color: white;
     				height: auto;
 					margin: 0 auto;
 					margin-top: 20px;
 					margin-bottom: 20px;
 					max-width: 630px;
-					padding: 8px;
-					padding-top: 15px;
 					width: 90%; 
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
 				}
 				> .about__item{
-					background-color: #3e4d74;
 					border-radius: 10px;
 					box-shadow: 0 3px 8px #1c1c1c;
-					color: white;
     				height: auto;
 					margin: 0 auto;
 					margin-bottom: 20px;
 					max-width: 630px;
-					padding: 8px;
-					padding-top: 15px;
   					width: 90%; 
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
-					ul{
-						font: 13px $font_main;
-						margin-left: 20px;
-						padding-left: 0px;
-						text-align: left;
-					}
 				}
 			}
 		}			

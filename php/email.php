@@ -14,58 +14,12 @@
 	$assunto = $_POST['input__assunto'];
 	$mensagem = $_POST['input__mensagem'];
 	//Corpo E-mail
-	$arquivo = "
-	<style type='text/css'>
-	body {
-	margin:0px;
-	font-family:Verdane;
-	font-size:12px;
-	color: #666666;
-	}
-	a{
-	color: #666666;
-	text-decoration: none;
-	}
-	a:hover {
-	color: #FF0000;
-	text-decoration: none;
-	}
-	</style>
-	<html>
-	    <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
-	        <tr>
-	          <td>
-				<tr>
-				    <td width='500'>Nome:$nome</td>
-				</tr>
-				<tr>
-				    <td width='320'>E-mail:<b>$email</b></td>
-				</tr>
-					<tr>
-					    <td width='320'>Telefone:<b>$telefone</b></td>
-					</tr>
-					<tr>
-					    <td width='320'>Tipo do Telefone:<b>$telefonetipo</b></td>
-					</tr>
-				<tr>
-	            <td width='320'>Motivo do Contato:$assunto</td>
-	            </tr>
-	            <tr>
-	              <td width='320'>Mensagem:$mensagem</td>
-	            </tr>
-	        </td>
-	      </tr>  
-	      <tr>
-	        <td>Este e-mail foi enviado em pelo site: www.grupomgservice.com.br</b></td>
-	      </tr>
-	    </table>
-	</html>
-	";
+	$arquivo = str_replace(array('$assunto', '$nome', '$email', '$telefone', '%telefonetipo', '$mensagem'), array($assunto, $nome, $email, $telefone, $telefonetipo, $mensagem) ,file_get_contents('../mail.html'));
 	//Enviar email
 	$remetente = "noreply@grupomgservice.com.br";
 	$destino = "contato@grupomgservice.com.br";
-	$headers  = 'MIME-Version: 1.0' . "\r\n";
-	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers  = 'MIME-Version: 1.0'."\r\n";
+	$headers .= 'Content-type: text/html; charset=UTF-8'."\r\n";
 	$headers .= 'From: Contato Site <noreply@grupomgservice.com.br>';
 	$enviaremail = mail($destino, $assunto, $arquivo, $headers, "-f$remetente");
 	if($enviaremail){
