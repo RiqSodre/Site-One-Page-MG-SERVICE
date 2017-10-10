@@ -10,7 +10,9 @@ $('#input__nome').on('keydown', function(event){
     }
   }
 });
+
 $('#input__telefone').mask('(00) 0000-00009');
+
 $('#input__telefone').blur(function(event) {
    if($(this).val().length == 15){
       $('#input__telefone').mask('(00) 00000-0009');
@@ -20,10 +22,12 @@ $('#input__telefone').blur(function(event) {
         $('#input__telefonetipo').val('Residencial');
    }
 });
+
 $('#input__mensagem').on('input',function(event){
         var char = 400-$(this).val().length;
         $('.char__restantes').text(char);
 });
+
 $().ready(function(){
   $('#form__contato').validate(
     {
