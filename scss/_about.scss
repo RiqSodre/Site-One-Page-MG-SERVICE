@@ -13,10 +13,12 @@
 				text-align: left;
 				> h2{
 					color: #01579B;
+					opacity: 0.0;
 					> .max{
 						color: #03A9F4;
 						font: bold 40px $font_main;
 						margin-left: 3%;
+						opacity: 0.0;
 					}
 				}
 			}
@@ -29,6 +31,7 @@
 				margin-top: -10px;
 				min-height: 400px;
 				min-width: 900px;
+				opacity: 0.0;
 				width: 80%;
 				> .presentation{
 					border: 2px solid white;
