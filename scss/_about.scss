@@ -13,13 +13,23 @@
 				text-align: left;
 				> h2{
 					color: #01579B;
-					opacity: 0.0;
-					> .max{
+					transform: translateX(-6%);
+					opacity: 0;
+					.max{
 						color: #03A9F4;
 						font: bold 40px $font_main;
 						margin-left: 3%;
-						opacity: 0.0;
+						transform: translateX(-12%);
 					}
+					.max.fade2Right{
+						transition: 0.8s ease-out;
+						transform: translateX(0%);
+					}
+				}
+				h2.fade2Right{
+					transition: 1s ease-out;
+					transform: translateX(0%);
+					opacity: 1;
 				}
 			}
 			> .aboutus__itens{
@@ -31,7 +41,8 @@
 				margin-top: -10px;
 				min-height: 400px;
 				min-width: 900px;
-				opacity: 0.0;
+				transform: translateY(500px);
+				opacity: 0;
 				width: 80%;
 				> .presentation{
 					border: 2px solid white;
@@ -75,6 +86,11 @@
 					}
 				}
 			}
+			.aboutus__itens.fade2top{
+				transition: 0.8s ease-out;
+				transform: translateY(0px);
+				opacity: 1;
+			}
 		}
 		> .qualities{
 			min-height: 400px;
@@ -116,6 +132,7 @@
 					&:hover{
 						border: 0.5px solid #03A9F4;
 						box-shadow: 0px 2px 5px #01579B;
+						transform: scale(1.03,1.03);
 					}
 					&:hover > .item__ico{
 						background-color: #03A9F4;
