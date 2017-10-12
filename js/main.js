@@ -1,7 +1,5 @@
 let linksNavBar = $('ul.navbar-nav > li > a');
 let altura = $('#navegacao').offset().top;
-let aboutSubTrue = false;
-let aboutIteTrue = false;
 
 linksNavBar.click(function(event){
 	let position = $(this.hash).offset() ? $(this.hash).offset() : '' ;
@@ -14,6 +12,10 @@ linksNavBar.click(function(event){
 	} else {
 		$('html, body').animate({scrollTop:position.top-heightMenu}, 1600);
 	}
+});
+
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0); 
 });
 
 $(window).scroll(function(){
@@ -31,26 +33,15 @@ $(window).scroll(function(){
 
 	let scrollTop = $(document).scrollTop();
     let scrollaboutSub = $('#subtitle').offset().top - window.innerHeight + 75;
-    let scrollaboutIte = $('#aboutus__itens').offset().top - window.innerHeight;
+    let scrollaboutIte = $('#aboutus__itens').offset().top - window.innerHeight - 400;
 
-    if (scrollTop > scrollaboutSub && aboutSubTrue === false) {
-      aboutSubTrue = true;
-      $('#sub_h1').animate({'margin-left': '-50px'}, 1, null, () => {
-      		$('#sub_h1').animate({'margin-left': '0%',
-	        	'opacity': "1"}, 1000);
-      	});
-      $('#sub_max').animate({'margin-left': '-200px'}, 1, null, () => {
-      		$('#sub_max').animate({'margin-left': '3%',
-	        	'opacity': '1'}, 1000);
-      	});
+    if (scrollTop > scrollaboutSub) {
+    	$('#who').addClass('fade2Right');
+    	$('#max').addClass('fade2Right');
     }
 
-    if (scrollTop > scrollaboutIte && aboutIteTrue === false) {
-      aboutIteTrue = true;
-      $('#aboutus__itens').animate({'margin-top': '500px'}, 1, null, () => {
-      		$('#aboutus__itens').animate({'margin-top': '-10px',
-	        	'opacity': '1'}, 1000);
-      	});
+    if (scrollTop > scrollaboutIte) {
+      	$('#aboutus__itens').addClass('fade2top');
     }
 });
 
