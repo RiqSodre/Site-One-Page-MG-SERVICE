@@ -15,21 +15,16 @@
 				max-width: 850px;
 				min-height: 350px; 
 				width: 100%;
-				margin-top: 50px;
+				margin-top: 30px;
 				margin-bottom: 30px;
 				background: #F8F4F4;
 				border-radius: 5px 20px 5px;
-
-				img{
-					filter: blur(2px);
-					&:hover{	
-						filter: blur(0px);
-					}
-				}
 				
-
-
-				//titulo//
+				#img{
+					min-width: auto;
+					width: 100%;
+				}
+				//titulo// 
 				h1{
 					text-align: center;
 					font: bold 24px $font_main;
@@ -53,7 +48,7 @@
 				//PORTARIA//
 				> #portaria{
 					display: inline-block;
-					margin-top: 30px;
+					margin-top: 10px;
 					padding-left: 30px;
 					padding-right: 30px;
 					text-align: center;
@@ -62,7 +57,7 @@
 				//RECEPÇÃO//
 				> #recepcao{
 					display: inline-block;
-					margin-top: 45px;
+					margin-top: 10px;
 					padding-left: 30px;
 					padding-right: 30px;
 					text-align: center;
@@ -71,7 +66,7 @@
 				//LIMPEZA//
 				> #limpeza{
 					display: inline-block;
-					margin-top: 45px;
+					margin-top: 10px;
 					padding-left: 30px;
 					padding-right: 30px;
 					text-align: center;
@@ -81,7 +76,7 @@
 				//JARDINAGEM//
 				> #jardinagem{
 					display: inline-block;
-					margin-top: 45px;
+					margin-top: 10px;
 					padding-left: 30px;
 					padding-right: 30px;
 					text-align: center;
@@ -90,7 +85,7 @@
 				//ZELADORIA//
 				> #zeladoria{
 					display: inline-block;
-					margin-top: 45px;
+					margin-top: 10px;
 					padding-left: 30px;
 					padding-right: 30px;
 					width:  100%;
