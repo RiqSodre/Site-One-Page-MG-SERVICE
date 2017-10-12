@@ -21,6 +21,7 @@
 				border-radius: 5px 20px 5px;
 				
 				#img{
+					filter: brightness(70%);
 					min-width: auto;
 					width: 100%;
 				}
@@ -40,9 +41,20 @@
 					color:#fff;
 					box-shadow: 5px 10px #000;
 					background-color: #3242a3;
+					> .img{
+						#img{
+							filter: brightness(100%);
+							transition: all 0.8s linear;
+						}
+					}
 				}
 				&, &:hover{
 					transition: all 0.2s linear;
+					> .img{
+						#img{
+							transition: all 0.8s linear;
+						}
+					}
 				}
 
 				//PORTARIA//
