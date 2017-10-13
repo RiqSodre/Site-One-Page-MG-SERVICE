@@ -7,7 +7,7 @@
 			display: inline-block;
 			font: 18px $font_main;
 			margin-bottom: 20px;
-			margin-top: -40px;
+			margin-top: -10px;
 			width: 79.5%;
 			> .subtitle{
 				text-align: left;
@@ -96,7 +96,8 @@
 		}
 		> .qualities{
 			min-height: 400px;
-			margin-bottom: 50px;
+			margin-top: 20px;
+			margin-bottom: 80px;
 			> .subtitle{
 				@include make-xs-column(12);
 				@include make-sm-column(12);
@@ -155,7 +156,7 @@
 						color: white;
 						display: inline-block;
 						height: 60px;
-						margin-top: -15px;
+						margin-top: 2px;
 						text-align: center;
 						width: 60px;
 						i{
