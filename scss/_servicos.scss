@@ -7,23 +7,33 @@
 			
 			cursor: pointer;
 			min-height: 200px;
-			background-color: #2D587B;
+			background-color: #242a3a;
+			filter: brightness(90%);
 			background-clip: content-box;
 			margin-bottom: 40px;
+			text-align: center;
 			> a{
-				display: block;
-				height: 150px;
-				width: 100%;
+				border: 5px solid #000;
+				border-radius: 5px;
+				background-color: #BBDEFB;
+				display: inline-block;
+				margin-top: 2.5%;
+				margin-bottom: 2.5%;
+				min-height: 190px;
+				height: 95%;
+				width: 95%;
 				text-align: center;
 				position: relative;
+				transition: all 0.3s linear;
 				> span.title{
-					 color: #fff;
+					 color: #000;
+					 display: block;
 					 font: 26px  $font_main;
 					 margin-top: 110px;
 					 position: absolute;
+					 top: 15px !important;
 					 width: 100%;
 					 text-align: center;
-					 display: none;
 				}
 				&:hover > span.title{
 					display: block;
@@ -56,13 +66,20 @@
 					}
 				}
 				&:hover > span{
-					top: 15px !important;
-					transition: top 0.2s linear;
+						color: #fff;
+						transition: top 0.5s linear;
 					}
 			}
-
-			&:hover{
-				background-color: #01579B;
+			&:hover {
+				filter: brightness(100%);
+				background-color: #212121;
+				transition: all 0.2s linear;
+			}
+			&:hover > a{
+				border-color: #126872;
+				background-color: #031727;
+				transform: scale(1.065, 1.065);
+				transition: all 0.3s linear;
 			}
 			&, &:hover{
 				transition: all 0.5s linear;

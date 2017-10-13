@@ -17,18 +17,25 @@
 					opacity: 0;
 					.max{
 						color: #03A9F4;
-						font: bold 40px $font_main;
+						font-size: 40px;
+						font-weight: bold;
 						margin-left: 3%;
 						transform: translateX(-12%);
 					}
 					.max.fade2Right{
 						transition: 0.8s ease-out;
-						transform: translateX(0%);
+						-ms-transform: translateX(0%);
+						-moz-transform: translateX(0%);
+						-o-transform: translateX(0%);
+						-webkit-transform: translateX(0%);
 					}
 				}
 				h2.fade2Right{
 					transition: 1s ease-out;
-					transform: translateX(0%);
+					-ms-transform: translateX(0%);
+					-moz-transform: translateX(0%);
+					-o-transform: translateX(0%);
+					-webkit-transform: translateX(0%);
 					opacity: 1;
 				}
 			}
@@ -36,6 +43,7 @@
 				background-color: #242a3a;
 				border-radius: 4px;
 				display: flex;
+				font-size: 13px;
 				justify-content: center;
 				margin: 0 auto;
 				margin-top: -10px;
@@ -56,10 +64,6 @@
 					padding: 8px;
 					padding-top: 15px;
 					width: 30%;
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
 				}
 				> .about__item{
 					background-color: #3e4d74;
@@ -74,12 +78,7 @@
 					padding: 8px;
 					padding-top: 15px;
 					width: 30%;
-					p{
-						font: 13px $font_main;
-						text-indent: 15px;
-					}
 					ul{
-						font: 13px $font_main;
 						margin-left: 20px;
 						padding-left: 0px;
 						text-align: left;
@@ -88,7 +87,10 @@
 			}
 			.aboutus__itens.fade2top{
 				transition: 0.8s ease-out;
-				transform: translateY(0px);
+				-ms-transform: translateX(0%);
+				-moz-transform: translateX(0%);
+				-o-transform: translateX(0%);
+				-webkit-transform: translateX(0%);
 				opacity: 1;
 			}
 		}
@@ -106,7 +108,8 @@
 					box-shadow: 0 3px 8px #1c1c1c;
 					color: white;
 					display: inline-block;
-					font: bold 28px $font_main;
+					font-size: 28px;
+					font-weight: bold;
 					padding: 10px;
 					text-align: center;
 					width: auto;
@@ -132,7 +135,10 @@
 					&:hover{
 						border: 0.5px solid #03A9F4;
 						box-shadow: 0px 2px 5px #01579B;
-						transform: scale(1.03,1.03);
+						-ms-transform: scale(1.03,1.03);
+						-moz-transform: scale(1.03,1.03);
+						-o-transform: scale(1.03,1.03);
+						-webkit-transform: scale(1.03,1.03);
 					}
 					&:hover > .item__ico{
 						background-color: #03A9F4;
@@ -153,13 +159,14 @@
 						text-align: center;
 						width: 60px;
 						i{
-							margin-top: 17.5px;
+							transform: translateY(60%);
 						}
 					}
 				}
 				h2{
 					display: inline-block;
-					font: bold 18px $font_main;
+					font-size: 18px;
+					font-weight: bold;
 					color: white;
 				}
 			}

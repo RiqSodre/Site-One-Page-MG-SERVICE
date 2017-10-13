@@ -1,8 +1,9 @@
 #contato{
+  font: 18px $font_main;
   > .formulario__ico{
     color: #fff;
     display: flex;
-    font: bold 18px $font_main;
+    font-weight: bold;
     justify-content: center;
     margin-bottom: 2px;
     label{
@@ -17,6 +18,7 @@
     text-align: center;
     > .form__contato{
       display: inline-block;
+      font-size: $font_form;
       max-width: 700px;
       min-height: 330px;
       min-width: 200px;
@@ -37,8 +39,8 @@
             position: relative;
             width: 100%;
             > label{
-              color: red;
-              font:  12px $font_main;
+              color: #F44336;
+              font-size:  12px;
               left: 50%;
               margin-left: -100px;
               position: absolute;
@@ -52,8 +54,8 @@
             position: relative;
             width: 100%;
             > label{
-              color: red;
-              font:  12px $font_main;
+              color: #F44336;
+              font:  12px;
               left: 50%;
               margin-left: -100px;
               position: absolute;
@@ -62,12 +64,11 @@
           }
           > label{
             float: left;
-            font: bold 14px $font_main;
+            font-weight: bold;
             margin-left: 3%;
           }
           > input{
             border-radius: $border_radius;
-            font: $font_form $font_main;
             margin: 0.5%;
             margin-bottom:5px;
             min-width: 190px;
@@ -75,7 +76,7 @@
           }
           > select{
             border-radius: $border_radius;
-            font: bold $font_form $font_main;
+            font-weight: bold;
             margin: 0.5%;
             margin-bottom:5px;
             min-width: 190px;
@@ -89,7 +90,7 @@
             width: 60%;
             > #label__assunto{
               display: inline-block;
-              font: bold $font_form $font_main;
+              font-weight: bold;
               margin-left: 2.5%;
               text-align: left;
             }
@@ -97,7 +98,7 @@
               border-radius: $border_radius;
               display: inline-block;
               float: left;
-              font: bold $font_form $font_main;
+              font-weight: bold;
               margin: 0.5%;
               min-width:190px;
               width: 98%;
@@ -111,13 +112,11 @@
           }
           > #mensagem2{
               float: right;
-              font: $font_form $font_main;
               text-align: right;
           }
           > textarea{
             border-radius: $border_radius;
             display: inline-block;
-            font: $font_form $font_main;
             height: 40%;
             margin-bottom:5px;
             min-height: 125px;
@@ -132,7 +131,6 @@
           > #btn__enviar{
               background-color: #EEEEEE;
               border: 1px solid #888888;
-              font: bold $font_form $font_main;
               min-height: 40px;
               min-width: 200px;
               width: 30%;
@@ -155,7 +153,8 @@
       } 
     }
     > .fale__conosco{
-      font: bold 20px $font_main;
+      font-size: 20px;
+      font-weight: bold;
       margin-top: 40px;
       margin-bottom: -15px;
       text-align: center;
@@ -163,7 +162,8 @@
     > .contato__telefones{
       color: #15ff70;
       display: flex;
-      font: bold 90% $font_main;
+      font-size: 70%;
+      font-weight: bold;
       justify-content: center;
       width: 100%;
       > .contato__telefone{
