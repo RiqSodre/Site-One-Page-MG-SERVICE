@@ -1,108 +1,78 @@
 #pgservicos{
 	margin-bottom: 80px;
-	> #services{
-		//div que contém os serviços//
-		@include make-xs-column(12);
-		@include make-sm-column(4);
-		@include make-md-column(3);
-		width: 100% !important;
-		display: inline-block;
-		text-align: center;
-			> .services__itens{
-				//div com os serviços//
+	.services{
+		//div que contém os serviços// 
+		> .servico_item{
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-md-column(9);
+			@include make-md-column-offset(1.5);
+
+			background-color: #3B3833;
+			box-shadow: 0 5px 5px #1c1c1c;
+			color: white;
+			margin-bottom: 40px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			.faixa{	
+				top: -5px;
+				background: #000;
+			    display: block;
+			    height: 2px;
+			    position: relative;
+			}
+			h1{
+				box-shadow: 0 3px 8px #1c1c1c;
+				color: white;
 				display: inline-block;
+				font-size: 28px;
+				font-weight: bold;
+				padding: 10px;
 				text-align: center;
-				max-width: 850px;
-				min-height: 350px; 
+				width: auto;
+			}
+			#img{
+				border: 1px solid #fff;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				min-width: auto;
 				width: 100%;
-				margin-top: 30px;
-				margin-bottom: 30px;
-				background: #F8F4F4;
-				border-radius: 5px 20px 5px;
-				
-				#img{
-					filter: brightness(70%);
-					min-width: auto;
-					width: 100%;
-				}
-				//titulo// 
-				h1{
-					text-align: center;
-					font: bold 24px $font_main;
-				}
-				//texto//
-				p{
-					font: 18px $font_main;
-					text-align: center;
-				}
-
-				//hover para animação//
-				&:hover{	
-					color:#fff;
-					box-shadow: 5px 10px #000;
-					background-color: #3242a3;
-					> .img{
-						#img{
-							filter: brightness(100%);
-							transition: all 0.8s linear;
-						}
-					}
-				}
-				&, &:hover{
-					transition: all 0.2s linear;
-					> .img{
-						#img{
-							transition: all 0.8s linear;
-						}
-					}
-				}
-
-				//PORTARIA//
-				> #portaria{
-					display: inline-block;
-					margin-top: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					text-align: center;
-					width: 100%;
-				}
-				//RECEPÇÃO//
-				> #recepcao{
-					display: inline-block;
-					margin-top: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					text-align: center;
-					width: 100%;
-				}
-				//LIMPEZA//
-				> #limpeza{
-					display: inline-block;
-					margin-top: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					text-align: center;
-					width: 100%;
-				}
-
-				//JARDINAGEM//
-				> #jardinagem{
-					display: inline-block;
-					margin-top: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					text-align: center;
-					width:  100%;
-				}
-				//ZELADORIA//
-				> #zeladoria{
-					display: inline-block;
-					margin-top: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					width:  100%;
-					text-align: center;
-				}
+			}
+		}
+		> #pt{
+			border-top: 5px solid #FFB300;
+			h1{
+				background-color: #FFB300;
+			}
+		}
+		> #rp{
+			border-top: 5px solid #7CB342;
+			h1{
+				background-color: #7CB342;
+			}
+		}
+		> #lp{
+			border-top: 5px solid #00897B;
+			h1{
+				background-color: #00897B;
+			}
+		}
+		> #jd{
+			border-top: 5px solid #039BE5;
+			h1{
+				background-color: #039BE5;
+			}
+		}
+		> #zd{
+			border-top: 5px solid #F4511E;
+			h1{
+				background-color: #F4511E;
+			}
 		}
 	}
 }
