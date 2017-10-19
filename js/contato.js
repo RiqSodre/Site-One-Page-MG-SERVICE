@@ -46,6 +46,7 @@ $().ready(function(){
             data: $(form).serialize(),
             success: function(data){
               alert(data);
+              limpaForm();
             }
             });     
           return false;
@@ -98,3 +99,12 @@ $().ready(function(){
         } 
       })
 });
+
+function limpaForm() {
+    $('#input__nome').val('');
+    $('#input__email').val('');
+    $('#input__telefone').val('');
+    $('#input__telefonetipo').val('');
+    $('#input__assunto').val('');
+    $('#input__mensagem').val('');
+}

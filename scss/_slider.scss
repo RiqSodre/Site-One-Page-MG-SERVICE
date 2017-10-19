@@ -1,11 +1,13 @@
 #slider{
 		margin-bottom: -35px;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
 	.item{
 		img{
-			display: inline-block;
 			width: 100%;
 			height: auto;
-			max-height: 477px;
+			display: inline-block; 
 		}
 	}
 }
