@@ -257,7 +257,6 @@
 				            <option value="Residencial">Residencial</option>
 				            <option value="Celular">Celular</option>
 				            <option value="Comercial">Comercial</option>
-				            <option value="Outro">Outro</option>
 				        </select>
 				      	<div class="divError"></div>
 				    </div>
@@ -274,14 +273,14 @@
 				            <option value="Elogio">Elogio</option>
 				            <option value="Sugestão">Sugestão</option>
 				            <option value="Trabalhe_Conosco">Trabalhe Conosco</option>
-				            <option value="Outro">Outro</option>
 				        </select>
 				        <!--Div criada para resolução de um bug--> 
 				      	<div class="divError2"></div>
 				    </div>
-				    <div class="form-group" id="group__div">
+				    <div class="form-group" id="group__cv">
 				    	<input type="hidden" name="MAX_FILE_SIZE" value="20"/>
-				    	<input id="input__cv" name="cv" type="file" class="input__cv" />
+				    	<input id="input__cv" name="cv" type="file" class="input__cv"/>
+				    	<label id="label__cv" class="label__cv" for="input__cv">Selecione seu CV</label>
 				    </div> 
 				</div>
 				    <div class="form-inline">

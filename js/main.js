@@ -79,8 +79,8 @@ $('#slider').owlCarousel({
 $('#input__assunto').on('change', function() {
 	 	let select = $(this).children(':selected').text();
         if (select.indexOf("Tra")!=-1) {
-        	$('#input__cv').addClass('ativo');
+        	$('#label__cv').addClass('ativo');
         }else {
-        	$('#input__cv').removeClass('ativo');
+        	$('#label__cv').removeClass('ativo');
         }
     });
