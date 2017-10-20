@@ -45,7 +45,7 @@ function CheckActive()
 }
 
 $('#pginicio').on('click', b = () => {
-	window.location.href = "index.html";
+	window.location.href = "index.php";
 });
 
 $(".navbar-nav li a").click(function() {
