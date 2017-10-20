@@ -86,7 +86,6 @@
         > #group__assunto{
             margin-top: 8px; 
             min-height: 85px;
-            min-width: 335;
             width: 60%;
             > #label__assunto{
               display: inline-block;
@@ -131,6 +130,8 @@
           > #btn__enviar{
               background-color: #EEEEEE;
               border: 1px solid #888888;
+              border-radius: 5px;
+              font-weight: bold;
               min-height: 40px;
               min-width: 200px;
               width: 30%;
@@ -144,16 +145,35 @@
               }
             }
           }
-        //Div criada para alinhamento do formulário
-        > #group__div{
+        > #group__cv{
+          display: inline-block;
           margin: 0;
           min-width: 202px;
           width: 34%;
           .input__cv{
             display: none;
           }
-          .input__cv.ativo{
+          .label__cv{
+            display: none;
+          }
+          .label__cv.ativo{
             display: inline-block;
+            background-color: #EEEEEE;
+            border: 1px solid #888888;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #000;
+            padding: 6px 20px;
+            width: 80%;
+            margin-left: 10%;
+            &:hover{
+              color: #fff;
+              background-color: #03A9F4;
+              border: 1px solid #03A9F4;
+            }
+            &,&:hover{
+              transition: all 0.2s linear;
+            }
           }
         }
       } 
