@@ -3,7 +3,7 @@ let altura = $('#navegacao').offset().top;
 
 linksNavBarService.click(function(event){
 	let position = $(this.hash).offset() ? $(this.hash).offset() : '' ;
-	let heightMenu = ($(window).scrollTop() < altura) ? 110 : 60;
+	let heightMenu = ($(window).scrollTop() < altura) ? 115	 : 60;
 	event.preventDefault();
 
 	if(!$(this.hash).offset()){
