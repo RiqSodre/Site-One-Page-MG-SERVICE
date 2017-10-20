@@ -1,88 +1,79 @@
 #servicos{
-	> #servicos__itens{
-		> .servicos__item{
+	.servicos__itens{
+		//div que contém os serviços// 
+		> .servico__item{
 			@include make-xs-column(12);
-			@include make-sm-column(6);
-			@include make-md-column(4);
-			@include make-md-column-offset(1.34);
-			
-			cursor: pointer;
-			min-height: 200px;
-			filter: brightness(90%);
-			background-clip: content-box;
+			@include make-sm-column(12);
+			@include make-md-column(9);
+			@include make-md-column-offset(1.5);
+
+			background-color: #3B3833;
+			box-shadow: 0 5px 5px #1c1c1c;
+			color: #BDBDBD;
 			margin-bottom: 40px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			width: 100%;
+			height: auto;
 			text-align: center;
-			> a{
-				border: 4px solid #031727;
-				border-radius: 2px;
-				background-color: #039BE5;
+			.faixa{	
+				top: -5px;
+				background: #757575;
+			    display: block;
+			    height: 2px;
+			    position: relative;
+			}
+			h1{
+				box-shadow: 0 3px 8px #1c1c1c;
+				color: white;
 				display: inline-block;
-				margin-top: 2.5%;
-				margin-bottom: 2.5%;
-				min-height: 190px;
-				height: 95%;
-				width: 95%;
+				font-size: 28px;
+				font-weight: bold;
+				padding: 10px;
 				text-align: center;
-				position: relative;
-				transition: all 0.3s linear;
-				> span.title{
-					 color: #000;
-					 display: block;
-					 font: 26px  $font_main;
-					 margin-top: 110px;
-					 position: absolute;
-					 top: 15px !important;
-					 width: 100%;
-					 text-align: center;
-				}
-				&:hover > span.title{
-					display: block;
-					font: bold 26px $font_main; 
-				}
-				> span.icon{
-					display: inline-block;
-					position: relative;
-					transition:  top 0.5s linear;
-					@extend .sprite_servicos;
-	
-					&.icon--porteiro{
-						@include sprite-define(90px, 87px, -10px, -217px);
-						top: (150px-87px)/2;
-					}
-					&.icon--recepcao{
-						@include sprite-define(100px, 90px, -5px, -430px);
-						top: (150px-90px)/2;
-					}
-					&.icon--limpeza{
-					  	@include sprite-define(100px, 84px, -5px, -115px);
-					  	top: (150px-84px)/2;
-					}
-					&.icon--jardinagem{
-						@include sprite-define(100px, 82px, -5px, -9px);
-						top: (150px-82px)/2;
-					}
-					&.icon--zeladoria{
-						@include sprite-define(100px, 88px, -5px, -535px);
-						top: (150px-88px)/2;
-					}
-				}
-				&:hover > span{
-						color: #fff;
-						transition: top 0.5s linear;
-					}
+				width: auto;
 			}
-			&:hover {
-				filter: brightness(100%);
-				transition: all 0.2s linear;
+			p{
+				text-align: justify;
 			}
-			&:hover > a{
-				border-color: #039BE5;
-				background-color: #031727;
-				transform: scale(1.04, 1.04);
-				transition: all 0.3s linear;
+			#img{
+				border: 4px solid #BDBDBD;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				min-width: auto;
+				width: 100%;
 			}
-			&, &:hover{
-				transition: all 0.5s linear;
+		}
+		> #pt{
+			border-top: 5px solid #039BE5;
+			h1{
+				background-color: #039BE5;
+			}
+		}
+		> #rp{
+			border-top: 5px solid #00897B;
+			h1{
+				background-color: #00897B;
+			}
+		}
+		> #lp{
+			border-top: 5px solid #7CB342;
+			h1{
+				background-color: #7CB342;
+			}
+		}
+		> #jd{
+			border-top: 5px solid #FFB300;
+			h1{
+				background-color: #FFB300;
+			}
+		}
+		> #zd{
+			border-top: 5px solid #F4511E;
+			h1{
+				background-color: #F4511E;
 			}
 		}
 	}

@@ -79,8 +79,10 @@ body{
 									color: #fff;
 									font: bold 16px $font_main;
 									outline: 0;
+									text-align: center;
 									&:hover{
 										background: #01579B;
+										transition: all 0.4s linear;
 									}
 								}
 							}
