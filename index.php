@@ -279,8 +279,10 @@
 				        <!--Div criada para resolução de um bug--> 
 				      	<div class="divError2"></div>
 				    </div>
-				    <!--Div criada para alinhamento do formulário-->
-				    <div class="form-group" id="group__div"></div> 
+				    <div class="form-group" id="group__div">
+				    	<input type="hidden" name="MAX_FILE_SIZE" value="20"/>
+				    	<input id="input__cv" name="cv" type="file" class="input__cv" />
+				    </div> 
 				</div>
 				    <div class="form-inline">
 				    	<div class="form-group" id="group__mensagem">
@@ -374,10 +376,7 @@
 			</div>
 	</footer>
 	<script src="js/main.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/slider.js"></script>
 	<script src="js/contato.js"></script>
-	<script src="js/pgservicos.js"></script>
 	<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

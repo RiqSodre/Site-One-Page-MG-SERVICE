@@ -149,6 +149,12 @@
           margin: 0;
           min-width: 202px;
           width: 34%;
+          .input__cv{
+            display: none;
+          }
+          .input__cv.ativo{
+            display: inline-block;
+          }
         }
       } 
     }
