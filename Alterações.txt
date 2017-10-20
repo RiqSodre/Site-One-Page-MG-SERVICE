@@ -1,0 +1,7 @@
+Alterações:
+ 	- É necessário alterar a cor do background do site para Azul;
+	- Adicionar uma área no formulário com um campo de Trabalhe Conosco;
+	- Alterar as fotos do Slider;
+	- Adicionar mais vida ao topo do site.
+Facebook:
+	- Fazer uma capa e uma foto de perfil para a página no facebook.

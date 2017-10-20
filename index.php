@@ -172,36 +172,41 @@
 				Nossos Serviços
 			</h2>
 		</header>
-		<div class="content" id="servicos__itens">
-			<div class="servicos__item">	
-				<a href="servicos.php">
-					<span class="icon icon--porteiro"></span>
-					<span class="title">PORTARIA</span>
-				</a>
+		<div class="servicos__itens">
+			<div class="servico__item" id="pt">
+				<h1>PORTARIA</h1>
+				<div class="faixa"></div>
+				<p>O porteiro tem como função recepcionar os moradores, visitantes, funcionários e prestadores de serviços. Os porteiros são profissionais de extrema confiança, escolhidos por meio de um processo seletivo rigoroso. Nossos profissionais passam por um treinamento qualificado para suprir as necessidades de cada cliente, com supervisionamento cauteloso e constante.
+				</p>
+				<img id="img" src="images/pt.png">
 			</div>
-			<div class="servicos__item">	
-				<a href="servicos.php">
-					<span class="icon icon--recepcao "></span>
-					<span class="title">RECEPÇÃO</span>
-				</a>
+			<div class="servico__item" id="rp">
+				<h1>RECEPÇÃO</h1>
+				<div class="faixa"></div>
+				<p>A recepcionista é a profissional responsável por atuar com o atendimento ao publico. Atender e filtrar ligações, anotar recados, receber e orientar visitas, arquivar documentos, esclarecer duvidas, são algumas das funções exercidas. Com um enfoque na agilidade e praticidade, nossas recepcionistas buscam a satisfação das pessoas com a qualidade de atendimento necessária, além de serem profissionais altamente qualificadas, com conhecimentos em informática, boa dicção e experiência na área.
+				</p>
+				<img id="img" id="img" src="images/rp.png">
 			</div>
-			<div class="servicos__item">	
-				<a href="servicos.php">
-					<span class="icon icon--limpeza"></span>
-					<span class="title">LIMPEZA</span>
-				</a>
+			<div class="servico__item" id="lp">
+				<h1>LIMPEZA</h1>
+				<div class="faixa"></div>
+				<p>O profissional da limpeza cuida da higienização de todos os ambientes do local de trabalho, garantindo sempre uma sensação de bem-estar e segurança. A MG SERVICE trabalha com profissionais capacitados, educados, e com exelente comprometimento com a limpeza, com a organização e com a satisfação do cliente, além de equipamentos modernos e produtos de qualidade. Nós cuidamos do seu ambiente, para que você se preocupe somente com o seu negócio.
+				</p>
+				<img id="img" id="img" src="images/lp.png">
 			</div>
-			<div class="servicos__item">	
-				<a href="servicos.php">
-					<span class="icon icon--jardinagem"></span>
-					<span class="title">JARDINAGEM</span>
-				</a>
+			<div class="servico__item" id="jd">
+				<h1>JARDINAGEM</h1>
+				<div class="faixa"></div>
+				<p>A função exercida pelo jardineiro é de preservar todas as áreas verdes de sua empresa ou condomínio. Os serviços de manutenção de jardins, levam em conta a periodicidade e necessidades peculiares de cada caso, também atuamos para satisfazer as modificações desejadas pelo cliente. As tarefas são realizadas por profissionais experientes e que utilizam de todas as ferramentas necessárias. A MG SERVICE garante um serviço de alta qualidade e que, com asseveração, irá transfigurar o recinto de sua empresa ou condomínio.
+				</p>
+				<img id="img" id="img" src="images/jd.png">
 			</div>
-			<div class="servicos__item">	
-				<a href="servicos.php">
-					<span class="icon icon--zeladoria"></span>
-					<span class="title">ZELADORIA</span>
-				</a>
+			<div class="servico__item" id="zd">
+				<h1>ZELADORIA</h1>
+				<div class="faixa"></div>
+				<p>O profissional da zeladoria é bastante solicitado por aqueles que buscam por um profissional de alto nível com ótimo custo-benefício. A terceirização de um zelador assegura a presença de alguém com responsabilidade para atuar com perfeição em diversas vertentes. Além de sempre zelar pela segurança do seu empreendimento, o zelador é um profissional capaz de acatar e controlar a circulação de pessoas e veículos, receber objetos, mercadorias, matérias e equipamentos, e de realizar pequenos reparos.
+				</p>
+				<img id="img" src="images/zd.png">
 			</div>
 		</div>
 	</section>
@@ -268,6 +273,7 @@
 				            <option value="Duvida">Dúvida</option>
 				            <option value="Elogio">Elogio</option>
 				            <option value="Sugestão">Sugestão</option>
+				            <option value="Trabalhe_Conosco">Trabalhe Conosco</option>
 				            <option value="Outro">Outro</option>
 				        </select>
 				        <!--Div criada para resolução de um bug--> 
@@ -313,6 +319,12 @@
 					<h1>
 						<i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
 						- (15) 99664-4554
+					</h1>
+				</div>
+				<div class="contato__telefone">
+					<h1>
+						<i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+						- (15) 98832-9039
 					</h1>
 				</div>
  			</div>
@@ -365,6 +377,7 @@
 	<script src="js/index.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/contato.js"></script>
+	<script src="js/pgservicos.js"></script>
 	<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

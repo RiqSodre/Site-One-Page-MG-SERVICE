@@ -161,16 +161,17 @@
     }
     > .contato__telefones{
       color: #15ff70;
-      display: flex;
       font-size: 70%;
       font-weight: bold;
-      justify-content: center;
-      width: 100%;
+      text-align: center;
       > .contato__telefone{
-        height: 100%;
-        margin-left: 2%;
-        margin-right: 2%;
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(4);
+
+        display: inline-block;
         text-decoration: none;
+        margin-bottom: -20px;
       }
     }
   }
