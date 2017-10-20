@@ -47,3 +47,9 @@ function CheckActive()
 $('#pginicio').on('click', b = () => {
 	window.location.href = "index.html";
 });
+
+$(".navbar-nav li a").click(function() {
+	if ( !$(this).parent().hasClass('dropdown') ) {
+  	$(".navbar-collapse").collapse('hide');
+  }
+});
