@@ -43,7 +43,7 @@ body{
 			border-color: #fff;
 		}
 		.navbar-toggle:hover, .navbar-toggle:focus{
-			background-color: #039BE5;
+			background-color: #01579B;
 		}
 		.icon-bar{
 			background-color: #fff;
@@ -76,11 +76,13 @@ body{
 									}
 								}
 								a{
+									text-align: center;
 									color: #fff;
 									font: bold 16px $font_main;
 									outline: 0;
 									&:hover{
 										background: #01579B;
+										transition: all 0.4s linear;
 									}
 								}
 							}
