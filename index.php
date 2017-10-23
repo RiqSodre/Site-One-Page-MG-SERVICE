@@ -12,6 +12,8 @@
 	<title>MG Service</title>
 	<meta name="description" content="MG SERVICE, Segurança, Portaria, Limpeza, Zeladoria, Recepção e Jardinagem.">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
 	<script src="js/vendors/jquery/jquery.mask.min.js"></script>
 	<script src="js/vendors/jquery/jquery.validate.min.js"></script>
@@ -53,7 +55,17 @@
 						    <ul class="nav navbar-nav">
 						        <li class="active"><a href="#top">Inicio</a></li>
 						        <li><a href="#about">Sobre Nós</a></li>
-						        <li><a href="#servicos">Serviços</a></li>
+						        <li class="dropdown">
+							        <a class="dropdown-toggle" data-toggle="dropdown" href="#servicos">Serviços
+							        <span class="caret"></span></a>
+							        <ul class="dropdown-menu">
+							          <li><a href="#pt">Portaria</a></li>
+							          <li><a href="#rp">Recepção</a></li>
+							          <li><a href="#lp">Limpeza</a></li>
+							          <li><a href="#jd">Jardinagem</a></li>
+							          <li><a href="#zd">Zeladoria</a></li>
+							        </ul>
+							     </li>
 						        <li><a href="#contato">Contato</a></li>
 						        <li><a href="#footer">Localização</a></li>
 						    </ul>

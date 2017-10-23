@@ -1,4 +1,3 @@
-
 let linksNavBarIndex = $('ul.navbar-nav > li > a');
 let altura = $('#navegacao').offset().top;
 
@@ -82,5 +81,11 @@ $('#input__assunto').on('change', function() {
         	$('#label__cv').addClass('ativo');
         }else {
         	$('#label__cv').removeClass('ativo');
-        }
-    });
+    }
+});
+
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
