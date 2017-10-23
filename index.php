@@ -66,7 +66,7 @@
 	
 	<div id="slider" class="owl-carousel owl-theme">	
 		<div class="item">
-		    <img src="images/bgindex.png" alt="MG SERVICE">
+		    <img src="images/bgindex.jpg" alt="MG SERVICE">
 		</div>
 	</div>
 	<div class="faixa"></div>
@@ -369,7 +369,7 @@
 				<div class="container">
 					<div class="content">
 						<p>Todos os Direitos Reservados © - 2017 - MG SERVICE | CNPJ.: 18.765.447/0001-17 | Givanildo Monteiro | Versão 1.0 </p>
-						<p>Design e Desenvolvimento por: <a href="https://www.facebook.com/EssentialsTech/">Essentials Technology</a></p>
+						<p>Desenvolvimento por: <a href="https://www.facebook.com/EssentialsTech/">Essentials Technology</a></p>
 					</div>
 				</div>
 			</div>
