@@ -10,15 +10,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MG Service</title>
-	<meta name="description" content="MG SERVICE, Segurança, Portaria, Limpeza, Zeladoria, Recepção e Jardinagem.">
+	<meta name="author" content="Essentials Technology">
+	<meta name="robots" content="index, follow"> 
+	<meta name="description" content="MG Service - Empresa de tercerização de serviços, como: Portaria, Recepção, Limpeza, Jardinagem e Zeladoria.">
+	<meta name="keywords" content="Grupo MG Service, Segurança, Tercerização, Portaria, Recepção, Limpeza, Jardinagem, Zeladoria">
+	<meta name="description" content="A MG Service é uma empresa que tem como principal atividade a terceirização de serviços com um atendimento personalizado, buscando sempre a satisfação dos clientes e oferecendo profissionais capacitados nas áreas de: Portaria, Recepção, Limpeza, Jardinagem e Zeladoria.">
+	<meta name="robots" content="noarchive">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
-	<script src="js/vendors/jquery/jquery.mask.min.js"></script>
-	<script src="js/vendors/jquery/jquery.validate.min.js"></script>
-	<script src="js/vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="https://use.fontawesome.com/7bbbae59e5.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/vendors/plugins.css">
 	<link rel="stylesheet" href="css/vendors/owl-carousel/owl.carousel.css">
@@ -26,6 +26,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
+	<script src="js/vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/vendors/jquery/jquery.mask.min.js"></script>
+	<script src="js/vendors/jquery/jquery.validate.min.js"></script>
 </head>
 <body>
 	<header id="top" class="container"> 	
@@ -45,7 +48,7 @@
 				<div id="navegacao__content">
 					<nav class="navbar navbar-default">
 						<div class="navbar-header">
-						    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
 						        <span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -55,17 +58,7 @@
 						    <ul class="nav navbar-nav">
 						        <li class="active"><a href="#top">Inicio</a></li>
 						        <li><a href="#about">Sobre Nós</a></li>
-						        <li class="dropdown">
-							        <a class="dropdown-toggle" data-toggle="dropdown" href="#servicos">Serviços
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#pt">Portaria</a></li>
-							          <li><a href="#rp">Recepção</a></li>
-							          <li><a href="#lp">Limpeza</a></li>
-							          <li><a href="#jd">Jardinagem</a></li>
-							          <li><a href="#zd">Zeladoria</a></li>
-							        </ul>
-							     </li>
+						        <li><a href="#servicos">Serviços</a></li>
 						        <li><a href="#contato">Contato</a></li>
 						        <li><a href="#footer">Localização</a></li>
 						    </ul>
@@ -75,7 +68,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<div id="slider" class="owl-carousel owl-theme">	
 		<div class="item">
 		    <img src="images/bgindex.jpg" alt="MG SERVICE">
@@ -310,8 +302,9 @@
 				    </div>
 					<div class="form-inline">
 					  	<div class="form-group" id="group__enviar">
-					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default"
-					         >Enviar Mensagem</button>
+					      	<button id="btn__enviar" name="btn__enviar" type="submit" type="button" class="btn btn-default">
+					      		Enviar Mensagem
+					      	</button>
 					  	</div>
 					</div>
 			</form>
@@ -389,5 +382,8 @@
 	<script src="js/main.js"></script>
 	<script src="js/contato.js"></script>
 	<script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+
+	<script src="js/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="https://use.fontawesome.com/7bbbae59e5.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ let altura = $('#navegacao').offset().top;
 
 linksNavBarIndex.click(function(event){
 	let position = $(this.hash).offset() ? $(this.hash).offset() : '' ;
-	let heightMenu = ($(window).scrollTop() < altura) ? $('#navegacao').height()+65 : 65;
+	let heightMenu = ($(window).scrollTop() < altura) ? $('#navegacao').height()+ 65 : 65;
 	event.preventDefault();
 
 	if(!$(this.hash).offset()){
@@ -15,7 +15,7 @@ linksNavBarIndex.click(function(event){
 
 	var navMain = $("#navegacao");
 
-     navMain.on("click", "a", null, function () {
+     navMain.on("click", null, function () {
          navMain.collapse('hide');
      });
 });
@@ -51,6 +51,7 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0); 
 });
 
+//Navbar Check
 function CheckActive()
 {
 	linksNavBarIndex.each(function(){
@@ -63,18 +64,21 @@ function CheckActive()
 	});
 }
 
+//Navbar Hide (Mobile)
 $(".navbar-nav li a").click(function() {
 	if ( !$(this).parent().hasClass('dropdown') ) {
   	$(".navbar-collapse").collapse('hide');
   }
 });
+ 
+//Slider
+// $('#slider').owlCarousel({
+//       slideSpeed : 300,
+//       paginationSpeed : 400,
+//       singleItem:true
+// });
 
-$('#slider').owlCarousel({
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
-});
-
+//Formulário Contato(Trabalhe Conosco)
 $('#input__assunto').on('change', function() {
 	 	let select = $(this).children(':selected').text();
         if (select.indexOf("Tra")!=-1) {
@@ -84,8 +88,11 @@ $('#input__assunto').on('change', function() {
     }
 });
 
+//Dropdown Menu 
 $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
+
+

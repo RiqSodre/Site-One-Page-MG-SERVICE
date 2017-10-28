@@ -12,21 +12,13 @@ body{
 				> .logo-container__logo{
 					width: 80%;
 				}
-			}
-			> .tel-container{
-				@include make-xs-column(12);
-				@include make-sm-column(4);
-				@include make-md-column(4);
-				
-				@include make-xs-column-offset(0);
-				@include make-sm-column-offset(4);
-				@include make-md-column-offset(5);
 			}		
 		}
 	}
 
 	.navegacao-fixa{
 	box-shadow: 0 3px 10px #1c1c1c;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 999;
