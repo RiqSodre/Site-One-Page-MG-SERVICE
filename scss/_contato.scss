@@ -14,22 +14,22 @@
     color: #fff;
     margin-bottom: 40px;
     min-height: 325px;
-    min-width: 200px;
     text-align: center;
     > .form__contato{
       display: inline-block;
       font-size: $font_form;
-      max-width: 700px;
       min-height: 330px;
-      min-width: 200px;
-      width: 90%;
       > .form-inline{
         > .form-group{
+          @include make-xs-column(12);
+          @include make-sm-column(6);
+          @include make-md-column(6);
+
           display: inline-block;
           margin-top: 0;
+          margin-bottom: 0;
           min-width: 200px;
           text-align: center;
-          width: 47%;
           .campo__obrigatorio{
             font-size: 13px;
             color:#FF0000;
@@ -37,7 +37,6 @@
           .divError{
             min-height: 20px;
             position: relative;
-            width: 100%;
             > label{
               color: #F44336;
               font-size:  12px;
@@ -55,7 +54,7 @@
             width: 100%;
             > label{
               color: #F44336;
-              font:  12px;
+              font-size:  12px;
               left: 50%;
               margin-left: -100px;
               position: absolute;
@@ -84,9 +83,8 @@
           }
         }
         > #group__assunto{
-            margin-top: 8px; 
+            margin-top: 8px;
             min-height: 85px;
-            width: 60%;
             > #label__assunto{
               display: inline-block;
               font-weight: bold;
@@ -104,11 +102,10 @@
             }
         }
         > #group__mensagem{
+          @include make-sm-column(12);
+          @include make-md-column(12);
+
           margin-bottom: 0;
-          width: 94%;
-          > #mensagem1{
-              margin-left: 1.5%;
-          }
           > #mensagem2{
               float: right;
               text-align: right;
@@ -125,8 +122,11 @@
           }
         }
         > #group__enviar{
+          @include make-sm-column(12);
+          @include make-md-column(12);
+
           margin-bottom: 25px;
-          margin-top: 15px;;
+          margin-top: 15px;
           > #btn__enviar{
               background-color: #EEEEEE;
               border: 1px solid #888888;
@@ -146,17 +146,18 @@
             }
           }
         > #group__cv{
-          display: inline-block;
-          margin: 0;
-          min-width: 202px;
-          width: 34%;
+          display: none;
           .input__cv{
             display: none;
           }
+        }
+        #group__cv.ativo{
+          display: flex;
+          min-height: 80px;
+          margin-bottom: 12px;
+          justify-content: center;
+          align-items: center;
           .label__cv{
-            display: none;
-          }
-          .label__cv.ativo{
             display: inline-block;
             background-color: #EEEEEE;
             border: 1px solid #888888;
@@ -164,8 +165,8 @@
             cursor: pointer;
             color: #000;
             padding: 6px 20px;
-            width: 80%;
-            margin-left: 10%;
+            min-width: 200px;
+            width: 30%;
             &:hover{
               color: #fff;
               background-color: #03A9F4;

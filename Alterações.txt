@@ -1,7 +1,14 @@
 Alterações:
- 	- É necessário alterar a cor do background do site para Azul;
-	- Adicionar uma área no formulário com um campo de Trabalhe Conosco;
-	- Alterar as fotos do Slider;
-	- Adicionar mais vida ao topo do site.
+	-  Todos os e-mails envidos do site vão para os respectivos e-mails a seguir: givamonteiro3@gmail.com grupomgservice@gmail.com ; (feito)
+ 	- É necessário alterar a cor do background do site para Azul;									 (feito)
+	- Alterar as caixas de Serviços, tirar as animações e Icones e alterar por fotos reais;						 (feito)
+	- Adicionar uma área no formulário com um campo de Trabalhe Conosco;								 (feito)
+	- Editar ou Excluir a página de Serviços, e deixar o site apenas OnePage;							 (feito)
+	- Alterar as fotos do Slider;													 (feito)
+	- Adicionar mais vida ao topo do site.												 (feito)
+
 Facebook:
-	- Fazer uma capa e uma foto de perfil para a página no facebook.
+	- Fazer uma capa e uma foto de perfil para a página no facebook.								 (feito)
+
+Novas tarefas:
+	- Fazer o scrool com o dropdown menu;												 ()

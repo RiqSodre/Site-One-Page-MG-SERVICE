@@ -40,15 +40,27 @@ $().ready(function(){
           $(element).next('div').html('');
         },
         submitHandler: function(form){
+            let formdata = new FormData($('#form__contato')[0]);
             $.ajax({
-            url: 'php/email.php',
-            type: 'POST',
-            data: $(form).serialize(),
-            success: function(data){
-              alert(data);
-              limpaForm();
-            }
-            });     
+                type: 'POST',
+                url: 'php/email.php',
+                data: formdata,
+                processData: false,
+                contentType: false,
+                success: function(data){
+                  alert(data);
+                  limpaForm();
+                }
+            });
+            // $.ajax({
+            // url: 'php/email.php',
+            // type: 'POST',
+            // data: $(form).serialize(),
+            // success: function(data){
+            //   alert(data);
+            //   limpaForm();
+            // }
+            // });     
           return false;
         },
         rules: {
@@ -107,4 +119,16 @@ function limpaForm() {
     $('#input__telefonetipo').val('');
     $('#input__assunto').val('');
     $('#input__mensagem').val('');
+    $('#input__cv').val('');
+    $('#group__cv').removeClass('ativo');
 }
+
+//Formulário Contato(Trabalhe Conosco)
+$('#input__assunto').on('change', function() {
+    let select = $(this).children(':selected').text();
+        if (select.indexOf('Tra')!=-1) {
+          $('#group__cv').addClass('ativo');
+        }else {
+          $('#group__cv').removeClass('ativo');
+    }
+});
