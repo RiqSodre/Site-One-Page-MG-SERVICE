@@ -78,16 +78,6 @@ $(".navbar-nav li a").click(function() {
 //       singleItem:true
 // });
 
-//Formulário Contato(Trabalhe Conosco)
-$('#input__assunto').on('change', function() {
-	 	let select = $(this).children(':selected').text();
-        if (select.indexOf("Tra")!=-1) {
-        	$('#label__cv').addClass('ativo');
-        }else {
-        	$('#label__cv').removeClass('ativo');
-    }
-});
-
 //Dropdown Menu 
 $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);

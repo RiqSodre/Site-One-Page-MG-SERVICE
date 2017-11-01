@@ -229,7 +229,7 @@
 			</label>
 		</div>
 		<div class="content" id="contato__items">
-			<form class="form__contato" id="form__contato" method="post" action="#">
+			<form class="form__contato" enctype="multipart/form-data" id="form__contato" method="post" action="#">
 				<div class="form-inline">
 					<div class="form-group">
 						<label for="input__nome" class="control-label">
@@ -282,8 +282,8 @@
 				      	<div class="divError2"></div>
 				    </div>
 				    <div class="form-group" id="group__cv">
-				    	<input type="hidden" name="MAX_FILE_SIZE" value="20"/>
-				    	<input id="input__cv" name="cv" type="file" class="input__cv"/>
+				    	<input type="hidden" name="MAX_FILE_SIZE" value="30000"/>
+				    	<input id="input__cv" type="file" class="input__cv" name="input__cv"/>
 				    	<label id="label__cv" class="label__cv" for="input__cv">Selecione seu CV</label>
 				    </div> 
 				</div>
